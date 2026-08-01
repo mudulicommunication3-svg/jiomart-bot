@@ -1,0 +1,107 @@
+{
+    "8140727103": [
+        {
+            "latitude": "20.128342",
+            "longitude": "86.070812",
+            "pincode": "754004",
+            "area_autodetected": "Niali",
+            "city": "CUTTACK",
+            "state": "ODISHA",
+            "phone": "7444123355",
+            "name": "Rear",
+            "address1": "Eeee",
+            "address2": "Eeee",
+            "area": "Niali"
+        },
+        {
+            "latitude": "20.12596",
+            "longitude": "86.057579",
+            "pincode": "754004",
+            "area_autodetected": "Niali",
+            "city": "CUTTACK",
+            "state": "ODISHA",
+            "phone": "9999666633",
+            "name": "Pppppp",
+            "address1": "Pppppp",
+            "address2": "Pppppp",
+            "area": "Niali"
+        }
+    ],
+    "7351664603": [
+        {
+            "latitude": "20.133308",
+            "longitude": "86.06249",
+            "pincode": "754004",
+            "area_autodetected": "Niali",
+            "city": "CUTTACK",
+            "state": "ODISHA",
+            "phone": "9933223322",
+            "name": "Rer",
+            "address1": "Ere",
+            "address2": "Ere",
+            "area": "Niali"
+        },
+        {
+            "latitude": "20.173884",
+            "longitude": "86.055649",
+            "pincode": "754004",
+            "area_autodetected": "Local Area",
+            "city": "CUTTACK",
+            "state": "ODISHA",
+            "phone": "6370419362",
+            "name": "DESIBOY",
+            "address1": "Desiboy",
+            "address2": "Desiboy",
+            "area": "Local Area"
+        },
+        {
+            "latitude": "20.17388",
+            "longitude": "86.05559",
+            "pincode": "752103",
+            "area_autodetected": "Abhayamukhi",
+            "city": "KHORDA",
+            "state": "ODISHA",
+            "phone": "6633223333",
+            "name": "Dddd",
+            "address1": "Rrrr",
+            "address2": "Rrrr",
+            "area": "Abhayamukhi"
+        },
+        {
+            "pincode": "752106",
+            "latitude": "20.060953",
+            "longitude": "86.008018",
+            "phone": "996633225533",
+            "name": "fake test",
+            "address1": "Fake",
+            "address2": "Fake"
+        },
+        {
+            "pincode": "752106",
+            "latitude": "20.064627",
+            "longitude": "86.028774",
+            "phone": "9933663322",
+            "name": "Sdl nimapada fake",
+            "address1": "Sdl fake",
+            "address2": "Sdl fake"
+        },
+        {
+            "pincode": "752106",
+            "latitude": "20.06593",
+            "longitude": "86.037195",
+            "phone": "9966332255",
+            "name": "Nima sdl fke",
+            "address1": "Nima",
+            "address2": "Nima"
+        },
+        {
+            "pincode": "754004",
+            "latitude": "20.095768",
+            "longitude": "86.089885",
+            "phone": "6370419362",
+            "name": "Desi boy",
+            "address1": "Niali sdl Desi boy",
+            "address2": "Niali sdl Desi boy"
+        }
+    ]
+}

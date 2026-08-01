@@ -1,0 +1,4 @@
+python-telegram-bot
+playwright
+aiohttp
+python-dotenv
