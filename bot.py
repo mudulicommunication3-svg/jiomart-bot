@@ -34,7 +34,7 @@ from telegram.ext import (
 # ==========================================
 # ୧. CONFIG & FILE PATHS (RENDER/LINUX COMPATIBLE)
 # ==========================================
-VERSION = "v14.2.0 (Render Port Fixed & Full Production)"
+VERSION = "v14.3.0 (RAM Optimized & Hang Fixed)"
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -49,7 +49,6 @@ ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
 if not TOKEN:
     raise ValueError("ଟୋକେନ୍ ମିଳିଲା ନାହିଁ! Environment Variable ଯାଞ୍ચ କରନ୍ତୁ।")
 
-# Server-friendly Base Directory
 BASE_DIR = os.path.join(os.getcwd(), "JioMartBot")
 os.makedirs(BASE_DIR, exist_ok=True)
 
@@ -60,7 +59,6 @@ PRODUCT_DB = os.path.join(BASE_DIR, "product_library.json")
 CART_DB = os.path.join(BASE_DIR, "cart_offline.json")
 CONFIG_DB = os.path.join(BASE_DIR, "bot_database.json")
 
-# Tracking Flags & Queues
 BATCH_STOP_FLAG = {}
 STOP_UPCOMING_TASKS_FLAG = {}
 ACTIVE_BATCH_INSTANCES = {}
@@ -68,6 +66,19 @@ SCHEDULED_ACTIONS = {}
 
 FIXED_VIEWPORT = {'width': 360, 'height': 640}
 MOBILE_USER_AGENT = "Mozilla/5.0 (Linux; Android 7.1.2; Redmi 5A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
+
+# Low RAM Browser Launch Args for Render Free Tier
+CHROMIUM_ARGS = [
+    "--disable-notifications",
+    "--no-sandbox",
+    "--disable-setuid-sandbox",
+    "--disable-dev-shm-usage",
+    "--disable-gpu",
+    "--no-zygote",
+    "--single-process",
+    "--disable-extensions",
+    "--js-flags=--max-old-space-size=256"
+]
 
 # ==========================================
 # 🛠️ HELPER FUNCTIONS
@@ -129,6 +140,8 @@ async def global_force_stop_action(update: Update, context: ContextTypes.DEFAULT
     instances = ACTIVE_BATCH_INSTANCES.get(chat_id, [])
     for inst in instances:
         try:
+            await inst["page"].close()
+            await inst["context"].close()
             await inst["browser"].close()
             await inst["playwright"].stop()
         except Exception:
@@ -155,7 +168,6 @@ async def stop_upcoming_continue_current(update: Update, context: ContextTypes.D
 # ==========================================
 async def build_payment_control_keyboard(chat_id, batch_instances):
     kb = []
-    
     kb.append([
         InlineKeyboardButton("➕ Queue New Order (+1)", callback_data="queue_add_new_order_action"),
         InlineKeyboardButton("🛑 Cancel All", callback_data="global_force_stop_btn")
@@ -218,7 +230,7 @@ async def queue_add_new_order_handler(update: Update, context: ContextTypes.DEFA
     inst_id = f"Browser #{new_idx}"
 
     p = await async_playwright().start()
-    browser = await p.chromium.launch(headless=True, args=["--disable-notifications", "--no-sandbox", "--disable-setuid-sandbox"])
+    browser = await p.chromium.launch(headless=True, args=CHROMIUM_ARGS)
     ctx = await browser.new_context(
         storage_state=auth_file,
         viewport=FIXED_VIEWPORT,
@@ -258,7 +270,6 @@ async def process_single_queued_browser(status_msg, context, chat_id, inst, coup
     try:
         await page.bring_to_front()
 
-        # 1. Apply Coupon
         if coupon_code and coupon_code != "None ❌":
             try:
                 coupon_input = page.locator("input[placeholder*='coupon'], input[id*='coupon'], input[class*='coupon']").first
@@ -279,7 +290,6 @@ async def process_single_queued_browser(status_msg, context, chat_id, inst, coup
                     await page.wait_for_timeout(4000)
             except Exception: pass
 
-        # 2. Capture Billing Screenshot
         cart_img_path = os.path.join(SESSION_DIR, f"cart_{b_id.replace('#', '').replace(' ', '')}.png")
         try:
             await page.screenshot(path=cart_img_path, full_page=True)
@@ -289,20 +299,16 @@ async def process_single_queued_browser(status_msg, context, chat_id, inst, coup
                 os.remove(cart_img_path)
         except Exception: pass
 
-        # 3. 8s Wait
         await asyncio.sleep(8)
 
-        # 4. Click Pay Online
         try:
             pay_now_btn = page.get_by_text("Pay Online").or_(page.get_by_text("Pay now")).or_(page.get_by_text("Proceed to Checkout")).first
             if await pay_now_btn.is_visible():
                 await pay_now_btn.click(force=True)
         except Exception: pass
 
-        # 5. 10s Wait
         await asyncio.sleep(10)
 
-        # 6. Capture Payment Screenshot
         pay_img_path = os.path.join(SESSION_DIR, f"payment_{b_id.replace('#', '').replace(' ', '')}.png")
         try:
             await page.screenshot(path=pay_img_path, full_page=True)
@@ -329,7 +335,7 @@ async def multi_continue_menu_handler(update: Update, context: ContextTypes.DEFA
     if query: await query.answer()
 
     if "batch_size" not in context.user_data: 
-        context.user_data["batch_size"] = 2
+        context.user_data["batch_size"] = 1
 
     size = context.user_data["batch_size"]
 
@@ -358,9 +364,9 @@ async def handle_batch_size_modifiers(update: Update, context: ContextTypes.DEFA
     query = update.callback_query
     await query.answer()
     
-    if query.data == "batch_size_minus" and context.user_data.get("batch_size", 2) > 1:
+    if query.data == "batch_size_minus" and context.user_data.get("batch_size", 1) > 1:
         context.user_data["batch_size"] -= 1
-    elif query.data == "batch_size_plus" and context.user_data.get("batch_size", 2) < 50:
+    elif query.data == "batch_size_plus" and context.user_data.get("batch_size", 1) < 10:
         context.user_data["batch_size"] += 1
 
     await multi_continue_menu_handler(update, context)
@@ -377,7 +383,7 @@ async def start_advanced_batch_flow_handler(update: Update, context: ContextType
     if not active_key or not auth_file or not os.path.exists(auth_file):
         return await query.message.reply_text("❌ No active session key found. Please login first!")
 
-    batch_size = context.user_data.get("batch_size", 2)
+    batch_size = context.user_data.get("batch_size", 1)
     preset_coupon = cfg.get("preset_coupon", "")
 
     BATCH_STOP_FLAG[chat_id] = False
@@ -398,13 +404,12 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
     ACTIVE_BATCH_INSTANCES[chat_id] = batch_instances
 
     try:
-        # STEP 1: OPEN BROWSERS
         for i in range(batch_size):
             if BATCH_STOP_FLAG.get(chat_id) or STOP_UPCOMING_TASKS_FLAG.get(chat_id):
                 break
 
             p = await async_playwright().start()
-            browser = await p.chromium.launch(headless=True, args=["--disable-notifications", "--no-sandbox", "--disable-setuid-sandbox"])
+            browser = await p.chromium.launch(headless=True, args=CHROMIUM_ARGS)
             ctx = await browser.new_context(
                 storage_state=auth_file,
                 viewport=FIXED_VIEWPORT,
@@ -438,7 +443,6 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
 
         if BATCH_STOP_FLAG.get(chat_id): return
 
-        # STEP 2: SEQUENTIAL PROCESS
         for idx, inst in enumerate(batch_instances):
             if BATCH_STOP_FLAG.get(chat_id): break
 
@@ -451,7 +455,6 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
 
             await page.bring_to_front()
             
-            # 1. Apply Coupon
             await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"🎟️ [{b_id}] Applying Coupon Code `{coupon_code}`...")
             if coupon_code and coupon_code != "None ❌":
                 try:
@@ -474,7 +477,6 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
                 except Exception as e:
                     logger.info(f"Coupon apply trace for {b_id}: {e}")
 
-            # 2. Capture Cart Billing Photo
             await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"📸 [{b_id}] Capturing Cart Billing Photo...")
             cart_img_path = os.path.join(SESSION_DIR, f"cart_{b_id.replace('#', '').replace(' ', '')}.png")
             try:
@@ -491,7 +493,6 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
             except Exception as e:
                 logger.error(f"Cart screenshot error: {e}")
 
-            # 3. Wait 8s
             for remaining_pre in range(8, 0, -1):
                 if BATCH_STOP_FLAG.get(chat_id): break
                 await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"⏳ [{b_id}] Coupon Applied! Waiting {remaining_pre}s before clicking Pay Online...")
@@ -499,7 +500,6 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
 
             if BATCH_STOP_FLAG.get(chat_id): break
 
-            # 4. Click Pay Online
             await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"💳 [{b_id}] Clicking Pay Online...")
             try:
                 pay_now_btn = page.get_by_text("Pay Online").or_(page.get_by_text("Pay now")).or_(page.get_by_text("Proceed to Checkout")).first
@@ -508,7 +508,6 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
             except Exception as ex:
                 logger.warning(f"Pay online click error {b_id}: {ex}")
 
-            # 5. Wait 10s
             for remaining_post in range(10, 0, -1):
                 if BATCH_STOP_FLAG.get(chat_id): break
                 await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"⏳ [{b_id}] Clicked Pay Online! Waiting {remaining_post}s before payment photo capture...")
@@ -516,7 +515,6 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
 
             if BATCH_STOP_FLAG.get(chat_id): break
 
-            # 6. Capture Payment Screen
             await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"📸 [{b_id}] Capturing Payment Page Screenshot...")
             pay_img_path = os.path.join(SESSION_DIR, f"payment_{b_id.replace('#', '').replace(' ', '')}.png")
             try:
@@ -587,6 +585,8 @@ async def handle_payment_inline_actions(update: Update, context: ContextTypes.DE
         if idx < len(instances):
             inst = instances[idx]
             try:
+                await inst["page"].close()
+                await inst["context"].close()
                 await inst["browser"].close()
                 await inst["playwright"].stop()
             except Exception: pass
@@ -728,6 +728,8 @@ async def monitor_order_refresh_and_confirm(status_msg, context, chat_id, instan
                             )
                         os.remove(conf_img_path)
 
+                    await page.close()
+                    await inst["context"].close()
                     await inst["browser"].close()
                     await inst["playwright"].stop()
                     inst["done"] = True
@@ -766,7 +768,6 @@ async def get_database_files_command(update: Update, context: ContextTypes.DEFAU
 async def handle_ping(request):
     return web.Response(text="JioMart Bot Web Server is Active & Healthy!")
 
-# Error Handler
 async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
     logger.error("Exception while handling an update:", exc_info=context.error)
 
@@ -812,18 +813,15 @@ def main():
     application.add_handler(CommandHandler("getdb", get_database_files_command))
     application.add_handler(CallbackQueryHandler(start_command, pattern="^main_menu$"))
 
-    # Force Stop Handlers
     application.add_handler(CallbackQueryHandler(global_force_stop_action, pattern="^global_force_stop_btn$"))
     application.add_handler(CallbackQueryHandler(stop_upcoming_continue_current, pattern="^stop_upcoming_continue_current$"))
 
-    # Batch Handlers
     application.add_handler(CallbackQueryHandler(multi_continue_menu_handler, pattern="^multi_continue_menu$"))
     application.add_handler(CallbackQueryHandler(handle_batch_size_modifiers, pattern="^batch_size_"))
     application.add_handler(CallbackQueryHandler(start_advanced_batch_flow_handler, pattern="^start_advanced_batch_flow$"))
     application.add_handler(CallbackQueryHandler(queue_add_new_order_handler, pattern="^queue_add_new_order_action$"))
     application.add_handler(CallbackQueryHandler(handle_payment_inline_actions, pattern="^(global_pay_|ind_pay_).*"))
 
-    # Render Port Binding Setup
     port = int(os.environ.get("PORT", 8080))
     app = web.Application()
     app.router.add_get("/", handle_ping)
