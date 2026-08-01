@@ -11,6 +11,7 @@ import aiohttp
 from datetime import datetime
 from dotenv import load_dotenv
 from playwright.async_api import async_playwright
+from aiohttp import web
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -31,9 +32,9 @@ from telegram.ext import (
 )
 
 # ==========================================
-# ୧. CONFIG & FILE PATHS
+# ୧. CONFIG & FILE PATHS (RENDER/LINUX COMPATIBLE)
 # ==========================================
-VERSION = "v14.0.0 (Dynamic Order Queueing Anytime & Multi-Task Handling)"
+VERSION = "v14.2.0 (Render Port Fixed & Full Production)"
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -46,14 +47,12 @@ TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
 
 if not TOKEN:
-    raise ValueError("ଟୋକେନ୍ ମିଳିଲା ନାହିଁ! .env ଫାଇଲ୍ ଯାଞ୍ચ କରନ୍ତୁ।")
+    raise ValueError("ଟୋକେନ୍ ମିଳିଲା ନାହିଁ! Environment Variable ଯାଞ୍ચ କରନ୍ତୁ।")
 
-if os.name == "nt" and os.path.exists("D:\\"):
-    BASE_DIR = os.path.join("D:\\", "JioMartBot")
-else:
-    BASE_DIR = os.path.join(os.path.expanduser("~"), "JioMartBot")
-
+# Server-friendly Base Directory
+BASE_DIR = os.path.join(os.getcwd(), "JioMartBot")
 os.makedirs(BASE_DIR, exist_ok=True)
+
 SESSION_DIR = os.path.join(BASE_DIR, "sessions")
 os.makedirs(SESSION_DIR, exist_ok=True)
 
@@ -91,6 +90,9 @@ def load_products():
 
 def load_configs():
     return load_json(CONFIG_DB, {})
+
+def save_configs(data):
+    save_json(CONFIG_DB, data)
 
 def load_cart(chat_id):
     return load_json(CART_DB, {}).get(str(chat_id), {})
@@ -149,12 +151,11 @@ async def stop_upcoming_continue_current(update: Update, context: ContextTypes.D
     STOP_UPCOMING_TASKS_FLAG[chat_id] = True
 
 # ==========================================
-# 🎛️ DYNAMIC INLINE KEYBOARD BUILDER WITH QUEUE BUTTON
+# 🎛️ DYNAMIC INLINE KEYBOARD BUILDER
 # ==========================================
 async def build_payment_control_keyboard(chat_id, batch_instances):
     kb = []
     
-    # Top Global Controls + Queue Add Button
     kb.append([
         InlineKeyboardButton("➕ Queue New Order (+1)", callback_data="queue_add_new_order_action"),
         InlineKeyboardButton("🛑 Cancel All", callback_data="global_force_stop_btn")
@@ -167,7 +168,6 @@ async def build_payment_control_keyboard(chat_id, batch_instances):
     
     kb.append([InlineKeyboardButton("✋ Stop Upcoming Tasks & Continue Current", callback_data="stop_upcoming_continue_current")])
 
-    # Dynamic Per-Browser Rows
     user_sched = SCHEDULED_ACTIONS.get(chat_id, {})
     for idx, inst in enumerate(batch_instances):
         b_id = inst["id"]
@@ -218,7 +218,7 @@ async def queue_add_new_order_handler(update: Update, context: ContextTypes.DEFA
     inst_id = f"Browser #{new_idx}"
 
     p = await async_playwright().start()
-    browser = await p.chromium.launch(headless=False, args=["--disable-notifications"])
+    browser = await p.chromium.launch(headless=True, args=["--disable-notifications", "--no-sandbox", "--disable-setuid-sandbox"])
     ctx = await browser.new_context(
         storage_state=auth_file,
         viewport=FIXED_VIEWPORT,
@@ -398,13 +398,13 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
     ACTIVE_BATCH_INSTANCES[chat_id] = batch_instances
 
     try:
-        # STEP 1: OPEN BROWSERS AND BUILD BUTTON ROWS DYNAMICALLY
+        # STEP 1: OPEN BROWSERS
         for i in range(batch_size):
             if BATCH_STOP_FLAG.get(chat_id) or STOP_UPCOMING_TASKS_FLAG.get(chat_id):
                 break
 
             p = await async_playwright().start()
-            browser = await p.chromium.launch(headless=False, args=["--disable-notifications"])
+            browser = await p.chromium.launch(headless=True, args=["--disable-notifications", "--no-sandbox", "--disable-setuid-sandbox"])
             ctx = await browser.new_context(
                 storage_state=auth_file,
                 viewport=FIXED_VIEWPORT,
@@ -438,7 +438,7 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
 
         if BATCH_STOP_FLAG.get(chat_id): return
 
-        # STEP 2: SEQUENTIAL PROCESS (Coupon -> Cart Photo -> 8s Hold -> Pay Online -> 10s Hold)
+        # STEP 2: SEQUENTIAL PROCESS
         for idx, inst in enumerate(batch_instances):
             if BATCH_STOP_FLAG.get(chat_id): break
 
@@ -451,7 +451,7 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
 
             await page.bring_to_front()
             
-            # 1. Apply Coupon from Database
+            # 1. Apply Coupon
             await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"🎟️ [{b_id}] Applying Coupon Code `{coupon_code}`...")
             if coupon_code and coupon_code != "None ❌":
                 try:
@@ -474,7 +474,7 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
                 except Exception as e:
                     logger.info(f"Coupon apply trace for {b_id}: {e}")
 
-            # 2. Capture Cart Billing Photo & Send
+            # 2. Capture Cart Billing Photo
             await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"📸 [{b_id}] Capturing Cart Billing Photo...")
             cart_img_path = os.path.join(SESSION_DIR, f"cart_{b_id.replace('#', '').replace(' ', '')}.png")
             try:
@@ -491,7 +491,7 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
             except Exception as e:
                 logger.error(f"Cart screenshot error: {e}")
 
-            # 3. WAIT EXACTLY 8 SECONDS BEFORE CLICKING PAY ONLINE
+            # 3. Wait 8s
             for remaining_pre in range(8, 0, -1):
                 if BATCH_STOP_FLAG.get(chat_id): break
                 await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"⏳ [{b_id}] Coupon Applied! Waiting {remaining_pre}s before clicking Pay Online...")
@@ -499,7 +499,7 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
 
             if BATCH_STOP_FLAG.get(chat_id): break
 
-            # 4. Click Pay Online / Pay Now
+            # 4. Click Pay Online
             await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"💳 [{b_id}] Clicking Pay Online...")
             try:
                 pay_now_btn = page.get_by_text("Pay Online").or_(page.get_by_text("Pay now")).or_(page.get_by_text("Proceed to Checkout")).first
@@ -508,7 +508,7 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
             except Exception as ex:
                 logger.warning(f"Pay online click error {b_id}: {ex}")
 
-            # 5. WAIT EXACTLY 10 SECONDS FOR PAYMENT SECTION TO LOAD
+            # 5. Wait 10s
             for remaining_post in range(10, 0, -1):
                 if BATCH_STOP_FLAG.get(chat_id): break
                 await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"⏳ [{b_id}] Clicked Pay Online! Waiting {remaining_post}s before payment photo capture...")
@@ -516,7 +516,7 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
 
             if BATCH_STOP_FLAG.get(chat_id): break
 
-            # 6. Capture Payment Page Photo After 10s & Send
+            # 6. Capture Payment Screen
             await refresh_live_dashboard(status_msg, chat_id, batch_instances, extra_text=f"📸 [{b_id}] Capturing Payment Page Screenshot...")
             pay_img_path = os.path.join(SESSION_DIR, f"payment_{b_id.replace('#', '').replace(' ', '')}.png")
             try:
@@ -540,14 +540,13 @@ async def run_full_batch_coupon_engine(status_msg, context, chat_id, auth_file, 
 
         if BATCH_STOP_FLAG.get(chat_id): return
 
-        # AUTO-EXECUTE SCHEDULED PAYMENTS
         await auto_execute_scheduled_payments(status_msg, context, chat_id, batch_instances)
 
     except Exception as e:
         await status_msg.edit_text(f"❌ Batch Workflow Error: {str(e)}")
 
 # ==========================================
-# 💳 PAYMENT SELECTION & SCHEDULED EXECUTION
+# 💳 PAYMENT SELECTION & EXECUTION
 # ==========================================
 async def handle_payment_inline_actions(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
@@ -695,7 +694,7 @@ async def execute_single_instance_qr(message_obj, context, chat_id, inst):
         logger.error(f"QR screenshot error: {e}")
 
 # ==========================================
-# 🔍 MONITOR PAGE REFRESH & CLOSE BROWSERS
+# 🔍 MONITOR PAGE REFRESH & CLOSE
 # ==========================================
 async def monitor_order_refresh_and_confirm(status_msg, context, chat_id, instances):
     completed = 0
@@ -745,6 +744,33 @@ async def monitor_order_refresh_and_confirm(status_msg, context, chat_id, instan
     await status_msg.edit_text("🎊 **All Batch Orders Processed & Browsers Closed Successfully!**", reply_markup=InlineKeyboardMarkup(kb), parse_mode="Markdown")
 
 # ==========================================
+# 💾 DATABASE EXPORT COMMAND (/getdb)
+# ==========================================
+async def get_database_files_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    chat_id = update.effective_chat.id
+    files = [CONFIG_DB, PRODUCT_DB, CART_DB]
+    
+    found = False
+    for fpath in files:
+        if os.path.exists(fpath):
+            found = True
+            with open(fpath, "rb") as f:
+                await context.bot.send_document(chat_id=chat_id, document=f, caption=f"📁 Backup: `{os.path.basename(fpath)}`", parse_mode="Markdown")
+
+    if not found:
+        await update.message.reply_text("❌ No database files found on server yet.")
+
+# ==========================================
+# 🌐 DUMMY WEB SERVER FOR RENDER PORT BINDING
+# ==========================================
+async def handle_ping(request):
+    return web.Response(text="JioMart Bot Web Server is Active & Healthy!")
+
+# Error Handler
+async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
+    logger.error("Exception while handling an update:", exc_info=context.error)
+
+# ==========================================
 # 🤖 MAIN BOT APPLICATION BUILDER
 # ==========================================
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -768,7 +794,8 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     msg = (
         f"👋 **JioMart Automation Bot [{VERSION}]**\n\n"
         f"🔑 **Active Session:** `{active_session}`\n"
-        f"📌 **Pincode:** `{user_conf.get('pincode', '754011')}`"
+        f"📌 **Pincode:** `{user_conf.get('pincode', '754011')}`\n\n"
+        f"💡 *Tip:* Use `/getdb` command to download database files."
     )
 
     if update.message:
@@ -779,8 +806,10 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     application = Application.builder().token(TOKEN).build()
+    application.add_error_handler(error_handler)
 
     application.add_handler(CommandHandler("start", start_command))
+    application.add_handler(CommandHandler("getdb", get_database_files_command))
     application.add_handler(CallbackQueryHandler(start_command, pattern="^main_menu$"))
 
     # Force Stop Handlers
@@ -794,7 +823,21 @@ def main():
     application.add_handler(CallbackQueryHandler(queue_add_new_order_handler, pattern="^queue_add_new_order_action$"))
     application.add_handler(CallbackQueryHandler(handle_payment_inline_actions, pattern="^(global_pay_|ind_pay_).*"))
 
-    logger.info(f"🚀 JioMart Bot [{VERSION}] Online & Ready!")
+    # Render Port Binding Setup
+    port = int(os.environ.get("PORT", 8080))
+    app = web.Application()
+    app.router.add_get("/", handle_ping)
+    runner = web.AppRunner(app)
+    
+    async def start_web_server():
+        await runner.setup()
+        site = web.TCPSite(runner, "0.0.0.0", port)
+        await site.start()
+
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(start_web_server())
+
+    logger.info(f"🚀 JioMart Bot [{VERSION}] Online & Ready on Port {port}!")
     application.run_polling()
 
 if __name__ == "__main__":
