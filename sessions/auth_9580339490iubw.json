@@ -1,0 +1,462 @@
+{
+    "cookies": [
+        {
+            "name": "R.session",
+            "value": "dl-ref-e5f7c3e2c3eeca95219adc6ac24b0d79f51f242515b22b36772ba3200447c6b9",
+            "domain": ".jiomart.com",
+            "path": "/api/service/application/user/authentication",
+            "expires": 1815388859.529485,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "Strict"
+        },
+        {
+            "name": "g",
+            "value": "sqb2hT2t10PUBb3A4f82_1783851556228",
+            "domain": ".creativecdn.com",
+            "path": "/",
+            "expires": 1816625016.083713,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "c",
+            "value": "sqb2hT2t10PUBb3A4f82_EfxWTKxWOxsxvi0JKAy2_1783851556228",
+            "domain": ".creativecdn.com",
+            "path": "/",
+            "expires": 1816625016.083892,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://jiomart.com",
+            "_crHasCrossSiteAncestor": true
+        },
+        {
+            "name": "_gcl_au",
+            "value": "1.1.24962217.1783851556",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1791627556,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ga",
+            "value": "GA1.1.1905355450.1783851556",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1819649018.464996,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ga",
+            "value": "GA1.1.1414440474.1783851563",
+            "domain": ".relianceretail.com",
+            "path": "/",
+            "expires": 1818411563.282945,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "cra_access_token",
+            "value": "Njg1OTQ1ZjQ2YzhjN2FlZTNmM2FmNjA1OlRwS3c3d0Q5aA==",
+            "domain": "account.relianceretail.com",
+            "path": "/",
+            "expires": 1815387633,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "cra_refresh_token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJycmlkIjoiYzAxYzJjNzYtNjg4Ni00NDdiLTljYjgtY2VmYzc3NTRiNzVkIiwiZGV2aWNlX2luZm8iOnsiZGV2aWNlX2ZpbmdlcnByaW50IjoiMDJmYzgyNjUtMzJhNS00Zi1leUp3YkdGMFptOXliU0k2Iiwib3NfbmFtZSI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsInRpbWVzdGFtcCI6IjIwMjYtMDctMTJUMTA6MjA6MzMuMDg0WiIsInNvdXJjZV9pZCI6IjdkNzBmZTZlLWY1NWEtNDliMS1iMTI1LTkyZjU5MDM0MjI3MyJ9LCJpYXQiOjE3ODM4NTE2MzMsImV4cCI6MTc5OTQwMzYzMywic2FsdCI6MH0.nOvpvdxRt-etTPQTXttQJAx-rfs6yCxsf_R_MBNAHgQ",
+            "domain": "account.relianceretail.com",
+            "path": "/",
+            "expires": 1815387633,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ga_XGZ513W4JV",
+            "value": "GS2.1.s1783851563$o1$g1$t1783851634$j59$l0$h0",
+            "domain": ".relianceretail.com",
+            "path": "/",
+            "expires": 1818411634.505628,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_fbp",
+            "value": "fb.1.1783852851049.1673788101",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1792865016,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "user_groups",
+            "value": "l1%3A%7Cl2%3A",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1815388859.529563,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "cra_refresh_token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJycmlkIjoiYzAxYzJjNzYtNjg4Ni00NDdiLTljYjgtY2VmYzc3NTRiNzVkIiwiZGV2aWNlX2luZm8iOnsiZGV2aWNlX2ZpbmdlcnByaW50IjoiMDJmYzgyNjUtMzJhNS00Zi1leUp3YkdGMFptOXliU0k2Iiwib3NfbmFtZSI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsInRpbWVzdGFtcCI6IjIwMjYtMDctMTJUMTA6MjA6MzMuMDg0WiIsInNvdXJjZV9pZCI6IjdkNzBmZTZlLWY1NWEtNDliMS1iMTI1LTkyZjU5MDM0MjI3MyJ9LCJpYXQiOjE3ODM4NTE2MzMsImV4cCI6MTc5OTQwMzYzMywic2FsdCI6MH0.nOvpvdxRt-etTPQTXttQJAx-rfs6yCxsf_R_MBNAHgQ",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "AKA_A2",
+            "value": "A",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1785092609.51502,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "__cf_bm",
+            "value": "F5qWlQqjz3m4XkFHEATGSngkEbXTuguOSy157s0n7xQ-1785089011.071383-1.0.1.1-9eiFPfVovZD_2JT8eqxGsCri7aiDsNRC7rdUxKAFYq2GboJl2SHWhBIOIJm6GTRfQHZ9ObzEgeizx7rKfEn5rcxvRWMmXP9OLiSkqQIJgtXdMzYDGWBHSopFwjaqYpIx",
+            "domain": ".pixelbin.io",
+            "path": "/",
+            "expires": 1785090810.454711,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "RT",
+            "value": "\"z=1&dm=www.jiomart.com&si=242594af-daac-4807-906f-2d92942d98ff&ss=ms23wmhw&sl=1&tt=1mb&rl=1&ld=444\"",
+            "domain": ".www.jiomart.com",
+            "path": "/",
+            "expires": 1785693814,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "app_location_details",
+            "value": "%7B%22country%22%3A%22INDIA%22%2C%22country_iso_code%22%3A%22IN%22%2C%22city%22%3A%22BERHAMPUR%22%2C%22pincode%22%3A%22754004%22%2C%22state%22%3A%22ODISHA%22%7D",
+            "domain": "www.jiomart.com",
+            "path": "/",
+            "expires": 1785175414,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "app_geolocation",
+            "value": "%7B%22latitude%22%3A%2220.1444%22%2C%22longitude%22%3A%2286.0619%22%2C%22polygon_ids%22%3A%5B%22U1QE_QC_11b47dae%22%5D%7D",
+            "domain": "www.jiomart.com",
+            "path": "/",
+            "expires": 1785175414,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "f.session",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc5YzBmNmM4NTg1MzczNmU4MDg1MThmIiwiZXh0ZXJuYWxfaWQiOiIxMjE1MzI0MjEiLCJlbWFpbHMiOlt7ImVtYWlsIjoiOTU4MDMzOTQ5MEBub21haWwuamlvbWFydC5jb20iLCJhY3RpdmUiOnRydWUsInByaW1hcnkiOnRydWUsInZlcmlmaWVkIjp0cnVlfV0sInBob25lX251bWJlcnMiOlt7InBob25lIjoiOTU4MDMzOTQ5MCIsImNvdW50cnlDb2RlIjo5MSwiYWN0aXZlIjp0cnVlLCJwcmltYXJ5Ijp0cnVlLCJ2ZXJpZmllZCI6dHJ1ZSwicnJpZF9saW5rZWQiOmZhbHNlLCJjb3VudHJ5X2NvZGUiOjkxfV0sImZpcnN0X25hbWUiOiItLSIsImxhc3RfbmFtZSI6Ii0tIiwiaGFzaGVkX3JyX2lkIjoiOTY5QkVBQjMxQzlEQ0ZEODNCMzMzNTI5ODFGNUVBQjg3NTk4NjBFMERCNEVGMzExMUJGQTE5NjUyODNGQjJERCIsInJyX2lkIjoiYzAxYzJjNzYtNjg4Ni00NDdiLTljYjgtY2VmYzc3NTRiNzVkIiwiY3JlYXRlZF9hdCI6IjIwMjUtMDEtMzBUMjM6NDY6NTIuMTcwWiIsImlhdCI6MTc4NTA4OTAxNSwiZXhwIjoxNzg1MTc1NDE1fQ.wrp5JMrLzxp-g79gyujD1uan9JhI-KfVZbw9r5YwdiQ",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1785175415.180774,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "Strict"
+        },
+        {
+            "name": "anonymous_id",
+            "value": "b0c08f9f577544639589dd5928e5937b",
+            "domain": ".www.jiomart.com",
+            "path": "/",
+            "expires": 1792865015.567655,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "old_browser_anonymous_id",
+            "value": "b0c08f9f577544639589dd5928e5937b",
+            "domain": ".www.jiomart.com",
+            "path": "/",
+            "expires": 1792865015.568115,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "anonymous_sig",
+            "value": "b1ee8436c6e7cf4952b0229047815c0545c65fd44207c6088ebdc5692d7252ac",
+            "domain": ".www.jiomart.com",
+            "path": "/",
+            "expires": 1792865015.568286,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "WZRK_S_884-7RK-Z77Z",
+            "value": "%7B%22p%22%3A1%7D",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1785090216,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "ts",
+            "value": "1785089016",
+            "domain": ".creativecdn.com",
+            "path": "/",
+            "expires": 1816625016.084075,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://jiomart.com",
+            "_crHasCrossSiteAncestor": true
+        },
+        {
+            "name": "__cf_bm",
+            "value": "J.5Ap37UQD_T0n8TgeybCw7EJRWFCGBw3AlLHk71l5c-1785089016.7909188-1.0.1.1-LEH2qOCasPq0WCRE2PPHEGnt1g6Q8t8LHCZaP6PlPfg8NFC8iWLiIHskukUD8G4dmeJcGgoGaMbsxeFUrXauBu62daYbIzOxFFTReQcpIJew_IEFByCA0Y43KnJIAA7q",
+            "domain": ".copilot.live",
+            "path": "/",
+            "expires": 1785090816.118646,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "_ga_XHR9Q2M3VV",
+            "value": "GS2.1.s1785089016$o3$g0$t1785089016$j60$l1$h26726531",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1819649016.345371,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "__cf_bm",
+            "value": "uDwcbS_ZCfpeAuVbSdAP968RXCprMP3MWfh6ZqYfH3w-1785089018.183492-1.0.1.1-tTn6JyrJ4zRFwPsITVlP1z788rPVxBt6XcmVAKk_J8Vh9FpARXYYsphJFsuyRuldNc3qFlTbGfH8Tj7k5mQndvfJ9AVVMG3_BV6z2Yl8lRli67vAKcy.2XVy16_XOfZu",
+            "domain": ".cdn.copilot.live",
+            "path": "/",
+            "expires": 1785090817.53352,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "_ga_F1NJ1E2HJ2",
+            "value": "GS2.1.s1785089018$o3$g1$t1785089018$j60$l0$h0",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1819649018.484467,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        }
+    ],
+    "origins": [
+        {
+            "origin": "https://www.jiomart.com",
+            "localStorage": [
+                {
+                    "name": "fayda_meter",
+                    "value": "{\"pincode\":\"754004\",\"timestamp\":1785089016351,\"ttl\":7200000,\"response\":{\"success\":true,\"data\":{\"status\":true,\"cust\":null,\"pincode\":{\"total_discounts\":1030565953.35,\"area\":\"Cuttack\",\"type\":\"T1\"}}}}"
+                },
+                {
+                    "name": "1277-505d15526856ea83ee70f96af2f4ffa21757f8d8-jio-api.haptikapi.com-DATA",
+                    "value": "{\"_initialized\":true,\"_isExistingState\":true,\"_destroyed\":false,\"_businesses\":[{\"active\":true,\"allow_delayed_form_submission\":true,\"archived\":false,\"branding_url\":\"\",\"city_list\":\"ALL\",\"commerce_client_name\":\"\",\"commerce_url\":\"\",\"config\":{\"baseUrl\":\"https://staging.hellohaptik.com\",\"botMessageSound\":{\"data\":{\"audioURL\":\"\"},\"type\":\"no\"},\"botPromptSoundUrl\":{\"data\":{\"audioURL\":\"\"},\"type\":\"default\"},\"botType\":\"TEXT\",\"chatIconConfig\":{\"data\":{\"imageURL\":\"\"},\"type\":\"default\"},\"customButton\":false,\"customButtonIdentifier\":\"\",\"customSignup\":false,\"customSignupIdentifier\":\"third_party\",\"disableBotPromptSound\":false,\"disablePreviousButtons\":true,\"disabled\":[],\"enableMessageNotificationSound\":false,\"fontSize\":\"14px\",\"gdpr\":false,\"languageIconConfig\":{\"data\":{\"imageURL\":\"\"},\"type\":\"global\"},\"language_config\":{\"en\":{\"buttonText\":\"Let's Chat!\",\"buttonTextDesktop\":\"Let's Chat!\",\"buttonTextMobile\":\"Let's Chat!\",\"composerPlaceholder\":\"Type here...\",\"fontFamily\":\"Roboto\",\"headerText\":\"\",\"previewText\":\"\"},\"hi\":{\"buttonText\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"buttonTextDesktop\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"buttonTextMobile\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"composerPlaceholder\":\"\u092f\u0939\u093e \u0932\u093f\u0916\u094b...\",\"fontFamily\":\"Roboto\",\"headerText\":\"\",\"previewText\":\"\"}},\"messageNotificationSoundUrl\":{\"data\":{\"audioURL\":\"\"},\"type\":\"default\"},\"mode\":\"ssm\",\"omnichannelWidget\":[{\"enabled\":false,\"type\":\"whatsapp\"},{\"enabled\":false,\"type\":\"messenger\"},{\"enabled\":false,\"type\":\"instagram\"}],\"primaryColor\":\"#3498db\",\"showAgentChatHistory\":false,\"showAgentData\":true,\"showReferencesSection\":true,\"showTimestamp\":true,\"showTypingSuggestions\":\"never\",\"showUserFeedback\":false,\"skipAutoScrollToBottom\":true,\"userFeedbackQuestionNegative\":\"\",\"userFeedbackQuestionPositive\":\"\",\"userFeedbackTagsNegative\":[],\"userFeedbackTagsPositive\":[],\"userMessageSound\":{\"data\":{\"audioURL\":\"\"},\"type\":\"no\"},\"voiceBotInitialInput\":\"VOICE\",\"widgetPositioning\":\"bottom-right\"},\"created_at\":\"2021-07-15T18:11:13\",\"custom_s3_bucket_details\":\"{}\",\"disposition_subreason_mandatory\":false,\"dynamic_message_function\":null,\"enable_closing_categories\":true,\"enable_commerce\":false,\"enable_commerce_url\":false,\"enable_custom_fields\":true,\"enable_gpt_botbreak_msg\":false,\"feedback_category\":1,\"feedback_config_details\":\"{\\\"feedback_delay\\\": 10, \\\"multiple_feedbacks\\\": true, \\\"feedback_cooldown_period\\\": 15}\",\"feedback_delay\":10,\"gpt_botbreak_prompt_extension\":\"\",\"hex_color\":null,\"hide_branding\":false,\"id\":1277,\"image_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/3a7721ed809376f258d0bdd9756cd38c.png?w=200&h=200\",\"is_custom_s3_bucket_enabled\":false,\"is_enhanced_queue_waiting_message_enabled\":false,\"language_code\":\"en\",\"language_name\":\"English\",\"language_native_name\":\"English\",\"languages\":[\"en\"],\"modified_at\":\"2026-06-17T11:22:06\",\"multiple_feedbacks\":true,\"multiple_language_support\":true,\"name\":\"JioMart Customer Care\",\"notification_image_url\":null,\"online\":true,\"order\":999,\"otp_screen_message\":null,\"pipeline_version\":2,\"preview_text\":null,\"requests_pii\":true,\"requires_verified_user\":false,\"resource_uri\":\"/api/v8/business/1277/\",\"show_close_chat_button\":true,\"sponsored\":false,\"task_box_header\":{\"en\":\"Welcome to JioMart.   I am JioMart's Virtual Assistant \ud83d\ude03 How can I help you today? \ud83d\udc47\"},\"to_ect\":true,\"unread\":0,\"use_offline_responses\":false,\"via_name\":\"jiomartcustomerappchannel\"}],\"_businessesIndexedByLanguage\":{\"en\":{\"active\":true,\"allow_delayed_form_submission\":true,\"archived\":false,\"branding_url\":\"\",\"city_list\":\"ALL\",\"commerce_client_name\":\"\",\"commerce_url\":\"\",\"config\":{\"baseUrl\":\"https://staging.hellohaptik.com\",\"botMessageSound\":{\"data\":{\"audioURL\":\"\"},\"type\":\"no\"},\"botPromptSoundUrl\":{\"data\":{\"audioURL\":\"\"},\"type\":\"default\"},\"botType\":\"TEXT\",\"chatIconConfig\":{\"data\":{\"imageURL\":\"\"},\"type\":\"default\"},\"customButton\":false,\"customButtonIdentifier\":\"\",\"customSignup\":false,\"customSignupIdentifier\":\"third_party\",\"disableBotPromptSound\":false,\"disablePreviousButtons\":true,\"disabled\":[],\"enableMessageNotificationSound\":false,\"fontSize\":\"14px\",\"gdpr\":false,\"languageIconConfig\":{\"data\":{\"imageURL\":\"\"},\"type\":\"global\"},\"language_config\":{\"en\":{\"buttonText\":\"Let's Chat!\",\"buttonTextDesktop\":\"Let's Chat!\",\"buttonTextMobile\":\"Let's Chat!\",\"composerPlaceholder\":\"Type here...\",\"fontFamily\":\"Roboto\",\"headerText\":\"\",\"previewText\":\"\"},\"hi\":{\"buttonText\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"buttonTextDesktop\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"buttonTextMobile\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"composerPlaceholder\":\"\u092f\u0939\u093e \u0932\u093f\u0916\u094b...\",\"fontFamily\":\"Roboto\",\"headerText\":\"\",\"previewText\":\"\"}},\"messageNotificationSoundUrl\":{\"data\":{\"audioURL\":\"\"},\"type\":\"default\"},\"mode\":\"ssm\",\"omnichannelWidget\":[{\"enabled\":false,\"type\":\"whatsapp\"},{\"enabled\":false,\"type\":\"messenger\"},{\"enabled\":false,\"type\":\"instagram\"}],\"primaryColor\":\"#3498db\",\"showAgentChatHistory\":false,\"showAgentData\":true,\"showReferencesSection\":true,\"showTimestamp\":true,\"showTypingSuggestions\":\"never\",\"showUserFeedback\":false,\"skipAutoScrollToBottom\":true,\"userFeedbackQuestionNegative\":\"\",\"userFeedbackQuestionPositive\":\"\",\"userFeedbackTagsNegative\":[],\"userFeedbackTagsPositive\":[],\"userMessageSound\":{\"data\":{\"audioURL\":\"\"},\"type\":\"no\"},\"voiceBotInitialInput\":\"VOICE\",\"widgetPositioning\":\"bottom-right\"},\"created_at\":\"2021-07-15T18:11:13\",\"custom_s3_bucket_details\":\"{}\",\"disposition_subreason_mandatory\":false,\"dynamic_message_function\":null,\"enable_closing_categories\":true,\"enable_commerce\":false,\"enable_commerce_url\":false,\"enable_custom_fields\":true,\"enable_gpt_botbreak_msg\":false,\"feedback_category\":1,\"feedback_config_details\":\"{\\\"feedback_delay\\\": 10, \\\"multiple_feedbacks\\\": true, \\\"feedback_cooldown_period\\\": 15}\",\"feedback_delay\":10,\"gpt_botbreak_prompt_extension\":\"\",\"hex_color\":null,\"hide_branding\":false,\"id\":1277,\"image_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/3a7721ed809376f258d0bdd9756cd38c.png?w=200&h=200\",\"is_custom_s3_bucket_enabled\":false,\"is_enhanced_queue_waiting_message_enabled\":false,\"language_code\":\"en\",\"language_name\":\"English\",\"language_native_name\":\"English\",\"languages\":[\"en\"],\"modified_at\":\"2026-06-17T11:22:06\",\"multiple_feedbacks\":true,\"multiple_language_support\":true,\"name\":\"JioMart Customer Care\",\"notification_image_url\":null,\"online\":true,\"order\":999,\"otp_screen_message\":null,\"pipeline_version\":2,\"preview_text\":null,\"requests_pii\":true,\"requires_verified_user\":false,\"resource_uri\":\"/api/v8/business/1277/\",\"show_close_chat_button\":true,\"sponsored\":false,\"task_box_header\":{\"en\":\"Welcome to JioMart.   I am JioMart's Virtual Assistant \ud83d\ude03 How can I help you today? \ud83d\udc47\"},\"to_ect\":true,\"unread\":0,\"use_offline_responses\":false,\"via_name\":\"jiomartcustomerappchannel\"}},\"_tasks\":[{\"active\":true,\"android_icon_name\":\"\",\"android_icon_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/5a23a6900ebe0ae2f73a8ccabc3f2b94.png?w=512&h=512\",\"api_url\":null,\"app_trigger\":null,\"business\":\"/api/v7/business/1277/\",\"business_id\":1277,\"business_name\":\"JioMart Customer Care\",\"business_order\":999,\"business_via_name\":\"jiomartcustomerappchannel\",\"can_favourite\":true,\"city_list\":\"ALL\",\"created_at\":\"2021-07-19T12:37:48\",\"default_selected\":false,\"deleted\":false,\"form_id\":null,\"id\":14586,\"ios_icon_name\":\"\",\"ios_icon_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/5a23a6900ebe0ae2f73a8ccabc3f2b94.png?w=512&h=512\",\"is_eligible\":true,\"is_task\":true,\"is_taskbox_supported\":true,\"is_tasklist_supported\":true,\"keyword_list\":\"\",\"language\":\"en\",\"location_required\":false,\"message\":\"Check Order Status{task}\",\"modified_at\":\"2024-06-05T13:03:36\",\"question\":\"Check Order Status\",\"relevance\":0,\"resource_uri\":\"/api/v7/tasks/14586/\",\"rules\":{\"clause\":\"AND\",\"enabled\":false,\"rule_list\":[{\"meta\":{},\"operator\":\"eq\",\"value\":\"\",\"variable\":\"page_url\"}],\"show_on_mobile\":false},\"short_hand\":null,\"tasklist_priority\":999},{\"active\":true,\"android_icon_name\":\"\",\"android_icon_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/2a8e3efe7374424d2fa3ae109551c80d.png?w=512&h=512\",\"api_url\":null,\"app_trigger\":null,\"business\":\"/api/v7/business/1277/\",\"business_id\":1277,\"business_name\":\"JioMart Customer Care\",\"business_order\":999,\"business_via_name\":\"jiomartcustomerappchannel\",\"can_favourite\":true,\"city_list\":\"ALL\",\"created_at\":\"2021-07-19T12:37:48\",\"default_selected\":false,\"deleted\":false,\"form_id\":null,\"id\":14587,\"ios_icon_name\":\"\",\"ios_icon_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/2a8e3efe7374424d2fa3ae109551c80d.png?w=512&h=512\",\"is_eligible\":true,\"is_task\":true,\"is_taskbox_supported\":true,\"is_tasklist_supported\":true,\"keyword_list\":\"\",\"language\":\"en\",\"location_required\":false,\"message\":\"Item Related Query{task}\",\"modified_at\":\"2024-06-05T13:03:36\",\"question\":\"Item Related Query\",\"relevance\":1,\"resource_uri\":\"/api/v7/tasks/14587/\",\"rules\":{\"clause\":\"AND\",\"enabled\":false,\"rule_list\":[{\"meta\":{},\"operator\":\"eq\",\"value\":\"\",\"variable\":\"page_url\"}],\"show_on_mobile\":false},\"short_hand\":null,\"tasklist_priority\":999},{\"active\":true,\"android_icon_name\":\"\",\"android_icon_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/7525836c56bb2be56b2cfdf085295af0.png?w=512&h=512\",\"api_url\":null,\"app_trigger\":null,\"business\":\"/api/v7/business/1277/\",\"business_id\":1277,\"business_name\":\"JioMart Customer Care\",\"business_order\":999,\"business_via_name\":\"jiomartcustomerappchannel\",\"can_favourite\":true,\"city_list\":\"ALL\",\"created_at\":\"2021-07-19T12:37:48\",\"default_selected\":false,\"deleted\":false,\"form_id\":null,\"id\":14588,\"ios_icon_name\":\"\",\"ios_icon_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/7525836c56bb2be56b2cfdf085295af0.png?w=512&h=512\",\"is_eligible\":true,\"is_task\":true,\"is_taskbox_supported\":true,\"is_tasklist_supported\":true,\"keyword_list\":\"\",\"language\":\"en\",\"location_required\":false,\"message\":\"Delivery Issue{task}\",\"modified_at\":\"2024-06-05T13:03:36\",\"question\":\"Delivery Issue\",\"relevance\":2,\"resource_uri\":\"/api/v7/tasks/14588/\",\"rules\":{\"clause\":\"AND\",\"enabled\":false,\"rule_list\":[{\"meta\":{},\"operator\":\"eq\",\"value\":\"\",\"variable\":\"page_url\"}],\"show_on_mobile\":false},\"short_hand\":null,\"tasklist_priority\":999},{\"active\":true,\"android_icon_name\":\"\",\"android_icon_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/e359b55c08516a70868c7fb267a76e25.png?w=512&h=512\",\"api_url\":null,\"app_trigger\":null,\"business\":\"/api/v7/business/1277/\",\"business_id\":1277,\"business_name\":\"JioMart Customer Care\",\"business_order\":999,\"business_via_name\":\"jiomartcustomerappchannel\",\"can_favourite\":true,\"city_list\":\"ALL\",\"created_at\":\"2021-07-19T12:37:48\",\"default_selected\":false,\"deleted\":false,\"form_id\":null,\"id\":14589,\"ios_icon_name\":\"\",\"ios_icon_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/e359b55c08516a70868c7fb267a76e25.png?w=512&h=512\",\"is_eligible\":true,\"is_task\":true,\"is_taskbox_supported\":true,\"is_tasklist_supported\":true,\"keyword_list\":\"\",\"language\":\"en\",\"location_required\":false,\"message\":\"Transaction Information{task}\",\"modified_at\":\"2024-06-05T13:03:36\",\"question\":\"Transaction Information\",\"relevance\":3,\"resource_uri\":\"/api/v7/tasks/14589/\",\"rules\":{\"clause\":\"AND\",\"enabled\":false,\"rule_list\":[{\"meta\":{},\"operator\":\"eq\",\"value\":\"\",\"variable\":\"page_url\"}],\"show_on_mobile\":false},\"short_hand\":null,\"tasklist_priority\":999},{\"active\":true,\"android_icon_name\":\"\",\"android_icon_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/422b310b078647f554d8951b0cb77727.png?w=512&h=512\",\"api_url\":null,\"app_trigger\":null,\"business\":\"/api/v7/business/1277/\",\"business_id\":1277,\"business_name\":\"JioMart Customer Care\",\"business_order\":999,\"business_via_name\":\"jiomartcustomerappchannel\",\"can_favourite\":true,\"city_list\":\"ALL\",\"created_at\":\"2021-07-19T12:37:48\",\"default_selected\":false,\"deleted\":false,\"form_id\":null,\"id\":14590,\"ios_icon_name\":\"\",\"ios_icon_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/422b310b078647f554d8951b0cb77727.png?w=512&h=512\",\"is_eligible\":true,\"is_task\":true,\"is_taskbox_supported\":true,\"is_tasklist_supported\":true,\"keyword_list\":\"\",\"language\":\"en\",\"location_required\":false,\"message\":\"Order Related Issue{task}\",\"modified_at\":\"2024-06-05T13:03:36\",\"question\":\"Order Related Issue\",\"relevance\":4,\"resource_uri\":\"/api/v7/tasks/14590/\",\"rules\":{\"clause\":\"AND\",\"enabled\":false,\"rule_list\":[{\"meta\":{},\"operator\":\"eq\",\"value\":\"\",\"variable\":\"page_url\"}],\"show_on_mobile\":false},\"short_hand\":null,\"tasklist_priority\":999}],\"_forms\":{},\"_config\":{\"baseURL\":\"https://jio-api.haptikapi.com\",\"clientId\":\"505d15526856ea83ee70f96af2f4ffa21757f8d8\",\"businessId\":\"1277\",\"authType\":\"third_party\"},\"_languages\":[\"en\"],\"_languagesIndexed\":{\"en\":{\"languageCode\":\"en\"}},\"_messagesByLanguage\":{\"en\":{}},\"_botPrompts\":[],\"_lastMessageId\":null,\"_activeBusiness\":{\"active\":true,\"allow_delayed_form_submission\":true,\"archived\":false,\"branding_url\":\"\",\"city_list\":\"ALL\",\"commerce_client_name\":\"\",\"commerce_url\":\"\",\"config\":{\"baseUrl\":\"https://staging.hellohaptik.com\",\"botMessageSound\":{\"data\":{\"audioURL\":\"\"},\"type\":\"no\"},\"botPromptSoundUrl\":{\"data\":{\"audioURL\":\"\"},\"type\":\"default\"},\"botType\":\"TEXT\",\"chatIconConfig\":{\"data\":{\"imageURL\":\"\"},\"type\":\"default\"},\"customButton\":false,\"customButtonIdentifier\":\"\",\"customSignup\":false,\"customSignupIdentifier\":\"third_party\",\"disableBotPromptSound\":false,\"disablePreviousButtons\":true,\"disabled\":[],\"enableMessageNotificationSound\":false,\"fontSize\":\"14px\",\"gdpr\":false,\"languageIconConfig\":{\"data\":{\"imageURL\":\"\"},\"type\":\"global\"},\"language_config\":{\"en\":{\"buttonText\":\"Let's Chat!\",\"buttonTextDesktop\":\"Let's Chat!\",\"buttonTextMobile\":\"Let's Chat!\",\"composerPlaceholder\":\"Type here...\",\"fontFamily\":\"Roboto\",\"headerText\":\"\",\"previewText\":\"\"},\"hi\":{\"buttonText\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"buttonTextDesktop\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"buttonTextMobile\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"composerPlaceholder\":\"\u092f\u0939\u093e \u0932\u093f\u0916\u094b...\",\"fontFamily\":\"Roboto\",\"headerText\":\"\",\"previewText\":\"\"}},\"messageNotificationSoundUrl\":{\"data\":{\"audioURL\":\"\"},\"type\":\"default\"},\"mode\":\"ssm\",\"omnichannelWidget\":[{\"enabled\":false,\"type\":\"whatsapp\"},{\"enabled\":false,\"type\":\"messenger\"},{\"enabled\":false,\"type\":\"instagram\"}],\"primaryColor\":\"#3498db\",\"showAgentChatHistory\":false,\"showAgentData\":true,\"showReferencesSection\":true,\"showTimestamp\":true,\"showTypingSuggestions\":\"never\",\"showUserFeedback\":false,\"skipAutoScrollToBottom\":true,\"userFeedbackQuestionNegative\":\"\",\"userFeedbackQuestionPositive\":\"\",\"userFeedbackTagsNegative\":[],\"userFeedbackTagsPositive\":[],\"userMessageSound\":{\"data\":{\"audioURL\":\"\"},\"type\":\"no\"},\"voiceBotInitialInput\":\"VOICE\",\"widgetPositioning\":\"bottom-right\"},\"created_at\":\"2021-07-15T18:11:13\",\"custom_s3_bucket_details\":\"{}\",\"disposition_subreason_mandatory\":false,\"dynamic_message_function\":null,\"enable_closing_categories\":true,\"enable_commerce\":false,\"enable_commerce_url\":false,\"enable_custom_fields\":true,\"enable_gpt_botbreak_msg\":false,\"feedback_category\":1,\"feedback_config_details\":\"{\\\"feedback_delay\\\": 10, \\\"multiple_feedbacks\\\": true, \\\"feedback_cooldown_period\\\": 15}\",\"feedback_delay\":10,\"gpt_botbreak_prompt_extension\":\"\",\"hex_color\":null,\"hide_branding\":false,\"id\":1277,\"image_url\":\"https://jio-haptikappimg.haptikapi.com/uploads/3a7721ed809376f258d0bdd9756cd38c.png?w=200&h=200\",\"is_custom_s3_bucket_enabled\":false,\"is_enhanced_queue_waiting_message_enabled\":false,\"language_code\":\"en\",\"language_name\":\"English\",\"language_native_name\":\"English\",\"languages\":[\"en\"],\"modified_at\":\"2026-06-17T11:22:06\",\"multiple_feedbacks\":true,\"multiple_language_support\":true,\"name\":\"JioMart Customer Care\",\"notification_image_url\":null,\"online\":true,\"order\":999,\"otp_screen_message\":null,\"pipeline_version\":2,\"preview_text\":null,\"requests_pii\":true,\"requires_verified_user\":false,\"resource_uri\":\"/api/v8/business/1277/\",\"show_close_chat_button\":true,\"sponsored\":false,\"task_box_header\":{\"en\":\"Welcome to JioMart.   I am JioMart's Virtual Assistant \ud83d\ude03 How can I help you today? \ud83d\udc47\"},\"to_ect\":true,\"unread\":0,\"use_offline_responses\":false,\"via_name\":\"jiomartcustomerappchannel\"},\"_putCallPending\":false,\"_activeLanguage\":\"en\",\"_eventListeners\":{},\"_messagesIndexed\":{},\"_isUserOnline\":true,\"_isChatOnAgent\":false,\"_hideWelcomeMessage\":false,\"_sendAnalyticsPending\":false,\"_compressTasks\":{\"is_compress_menu_enabled\":false,\"compress_menu_value\":4},\"_welcomeMessageDetails\":{\"is_welcome_message_timeout_enabled\":false,\"welcome_message_timeout_value\":24},\"_activeAppSettings\":{\"baseUrl\":\"https://staging.hellohaptik.com\",\"botMessageSound\":{\"data\":{\"audioURL\":\"\"},\"type\":\"no\"},\"botPromptSoundUrl\":{\"data\":{\"audioURL\":\"\"},\"type\":\"default\"},\"botType\":\"TEXT\",\"chatIconConfig\":{\"data\":{\"imageURL\":\"\"},\"type\":\"default\"},\"customButton\":false,\"customButtonIdentifier\":\"\",\"customSignup\":false,\"customSignupIdentifier\":\"third_party\",\"disableBotPromptSound\":false,\"disablePreviousButtons\":true,\"disabled\":[],\"enableMessageNotificationSound\":false,\"fontSize\":\"14px\",\"gdpr\":false,\"languageIconConfig\":{\"data\":{\"imageURL\":\"\"},\"type\":\"global\"},\"language_config\":{\"en\":{\"buttonText\":\"Let's Chat!\",\"buttonTextDesktop\":\"Let's Chat!\",\"buttonTextMobile\":\"Let's Chat!\",\"composerPlaceholder\":\"Type here...\",\"fontFamily\":\"Roboto\",\"headerText\":\"\",\"previewText\":\"\"},\"hi\":{\"buttonText\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"buttonTextDesktop\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"buttonTextMobile\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"composerPlaceholder\":\"\u092f\u0939\u093e \u0932\u093f\u0916\u094b...\",\"fontFamily\":\"Roboto\",\"headerText\":\"\",\"previewText\":\"\"}},\"messageNotificationSoundUrl\":{\"data\":{\"audioURL\":\"\"},\"type\":\"default\"},\"mode\":\"ssm\",\"omnichannelWidget\":[{\"enabled\":false,\"type\":\"whatsapp\"},{\"enabled\":false,\"type\":\"messenger\"},{\"enabled\":false,\"type\":\"instagram\"}],\"primaryColor\":\"#3498db\",\"showAgentChatHistory\":false,\"showAgentData\":true,\"showReferencesSection\":true,\"showTimestamp\":true,\"showTypingSuggestions\":\"never\",\"showUserFeedback\":false,\"skipAutoScrollToBottom\":true,\"userFeedbackQuestionNegative\":\"\",\"userFeedbackQuestionPositive\":\"\",\"userFeedbackTagsNegative\":[],\"userFeedbackTagsPositive\":[],\"userMessageSound\":{\"data\":{\"audioURL\":\"\"},\"type\":\"no\"},\"voiceBotInitialInput\":\"VOICE\",\"widgetPositioning\":\"bottom-right\",\"id\":1277,\"imageURL\":\"https://jio-haptikappimg.haptikapi.com/uploads/3a7721ed809376f258d0bdd9756cd38c.png?w=200&h=200\"},\"_appSettingsIndexed\":{\"1277\":{\"baseUrl\":\"https://staging.hellohaptik.com\",\"botMessageSound\":{\"data\":{\"audioURL\":\"\"},\"type\":\"no\"},\"botPromptSoundUrl\":{\"data\":{\"audioURL\":\"\"},\"type\":\"default\"},\"botType\":\"TEXT\",\"chatIconConfig\":{\"data\":{\"imageURL\":\"\"},\"type\":\"default\"},\"customButton\":false,\"customButtonIdentifier\":\"\",\"customSignup\":false,\"customSignupIdentifier\":\"third_party\",\"disableBotPromptSound\":false,\"disablePreviousButtons\":true,\"disabled\":[],\"enableMessageNotificationSound\":false,\"fontSize\":\"14px\",\"gdpr\":false,\"languageIconConfig\":{\"data\":{\"imageURL\":\"\"},\"type\":\"global\"},\"language_config\":{\"en\":{\"buttonText\":\"Let's Chat!\",\"buttonTextDesktop\":\"Let's Chat!\",\"buttonTextMobile\":\"Let's Chat!\",\"composerPlaceholder\":\"Type here...\",\"fontFamily\":\"Roboto\",\"headerText\":\"\",\"previewText\":\"\"},\"hi\":{\"buttonText\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"buttonTextDesktop\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"buttonTextMobile\":\"\u091a\u0932\u094b \u092c\u093e\u0924 \u0915\u0930\u0947!\",\"composerPlaceholder\":\"\u092f\u0939\u093e \u0932\u093f\u0916\u094b...\",\"fontFamily\":\"Roboto\",\"headerText\":\"\",\"previewText\":\"\"}},\"messageNotificationSoundUrl\":{\"data\":{\"audioURL\":\"\"},\"type\":\"default\"},\"mode\":\"ssm\",\"omnichannelWidget\":[{\"enabled\":false,\"type\":\"whatsapp\"},{\"enabled\":false,\"type\":\"messenger\"},{\"enabled\":false,\"type\":\"instagram\"}],\"primaryColor\":\"#3498db\",\"showAgentChatHistory\":false,\"showAgentData\":true,\"showReferencesSection\":true,\"showTimestamp\":true,\"showTypingSuggestions\":\"never\",\"showUserFeedback\":false,\"skipAutoScrollToBottom\":true,\"userFeedbackQuestionNegative\":\"\",\"userFeedbackQuestionPositive\":\"\",\"userFeedbackTagsNegative\":[],\"userFeedbackTagsPositive\":[],\"userMessageSound\":{\"data\":{\"audioURL\":\"\"},\"type\":\"no\"},\"voiceBotInitialInput\":\"VOICE\",\"widgetPositioning\":\"bottom-right\",\"id\":1277,\"imageURL\":\"https://jio-haptikappimg.haptikapi.com/uploads/3a7721ed809376f258d0bdd9756cd38c.png?w=200&h=200\"}},\"_eventsHubURL\":{\"url\":\"\",\"token\":\"\"},\"_lastCached\":1785089017847}"
+                },
+                {
+                    "name": "tabBG",
+                    "value": "#0078AD"
+                },
+                {
+                    "name": "HEmail",
+                    "value": "091ef8dd89909e86e1edaabdc502bfba061dcfc56d6a090d40a384534d391daa"
+                },
+                {
+                    "name": "jio_quick_commerce",
+                    "value": "yes"
+                },
+                {
+                    "name": "jio_serviceable_stores",
+                    "value": "[{\"uid\":16369,\"code\":\"T1RA\",\"display_name\":\"T1RA-Fashioln-TRENDS-QC\",\"priority\":1,\"processing_time\":0,\"promise\":{\"min\":\"2026-07-12T14:16:08Z\",\"max\":\"2026-07-12T15:16:08Z\"},\"journey_wise_promise\":[{\"journey\":\"quickcommerce\",\"meta\":{\"zone\":\"east\",\"mbv_config\":[{\"department\":\"Groceries\",\"min_basket_value\":99}],\"polygon_id\":null,\"distance\":405.2812},\"delivery_promise\":{\"min\":\"2026-07-12T14:16:08Z\",\"max\":\"2026-07-12T15:16:08Z\",\"message\":\"Delivery in 1 to 2 hrs\"}}],\"seller_id\":1,\"address\":{\"address2\":\"\",\"pincode\":\"754004\",\"city\":\"BERHAMPUR\",\"country\":\"India\",\"state\":\"ODISHA\",\"country_code\":\"IN\",\"latitude\":20.1409871,\"longitude\":86.0605374},\"timings\":{\"open\":true,\"opening\":{\"hour\":10,\"minute\":0},\"closing\":{\"hour\":19,\"minute\":0}},\"is_accepting_order\":true,\"department_name\":\"Fashion\",\"distance\":405.2812,\"store_logo_url\":null,\"store_banner_url\":null,\"store_banner_portrait_url\":null,\"promisetime\":\"120\",\"additional_stores\":[]},{\"uid\":857,\"code\":\"U1QE\",\"display_name\":\"Groceries-U1QE\",\"priority\":1,\"processing_time\":0,\"promise\":{\"min\":\"2026-07-12T13:26:08Z\",\"max\":\"2026-07-12T13:46:08Z\"},\"journey_wise_promise\":[{\"journey\":\"quickcommerce\",\"meta\":{\"zone\":\"east\",\"mbv_config\":[{\"department\":\"Groceries\",\"min_basket_value\":99}],\"polygon_id\":\"U1QE_QC_11b47dae\",\"distance\":979.4229},\"delivery_promise\":{\"min\":\"2026-07-12T13:26:08Z\",\"max\":\"2026-07-12T13:46:08Z\",\"message\":\"Delivery in 10 to 30 mins\",\"secondary_message\":\"Scheduled delivery\"},\"store_code\":\"U1QE\",\"store_ids\":857,\"expiry\":\"Sun Jul 12 2026 19:16:07 GMT+0530 (India Standard Time)\"}],\"seller_id\":1,\"address\":{\"address2\":\"\",\"pincode\":\"754004\",\"city\":\"BERHAMPUR\",\"country\":\"India\",\"state\":\"ODISHA\",\"country_code\":\"IN\",\"latitude\":20.141078,\"longitude\":86.0532147},\"timings\":{\"open\":true,\"opening\":{\"hour\":8,\"minute\":0},\"closing\":{\"hour\":22,\"minute\":0}},\"is_accepting_order\":true,\"department_name\":\"Groceries\",\"distance\":979.4229,\"store_logo_url\":null,\"store_banner_url\":null,\"store_banner_portrait_url\":null,\"promisetime\":\"30\",\"additional_stores\":[]}]"
+                },
+                {
+                    "name": "visitor_id",
+                    "value": "1f193676-96da-43d7-943b-62ab7c128061"
+                },
+                {
+                    "name": "jio_lat_long",
+                    "value": "{\"latitude\":\"20.1444\",\"longitude\":\"86.0619\"}"
+                },
+                {
+                    "name": "_gcl_ls",
+                    "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1783851556172},\"expires\":1791627556172}}"
+                },
+                {
+                    "name": "pin",
+                    "value": "{\"country\":\"India\",\"country_iso_code\":\"IN\",\"pincode\":\"754004\",\"city\":\"BERHAMPUR\",\"state\":\"ODISHA\"}"
+                },
+                {
+                    "name": "loglevel",
+                    "value": "ERROR"
+                },
+                {
+                    "name": "jio_mbv_details",
+                    "value": "{\"groceries\":\"99\",\"updated_at\":\"2026-07-12T13:16:07.899Z\"}"
+                },
+                {
+                    "name": "copilotsessiontoken",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbF9hLnNlc3Npb24iOiJjLXdaVHV0UlQ4ckFfQmpLU0xSU0w3UC1tczIzd3RodyIsImlhdCI6MTc4NTA4OTAxN30.rRThygaYDvan9yNwNwdQXJw9SMOf6eMJ_rEnYzGlmVs"
+                },
+                {
+                    "name": "moloco_persistent_id",
+                    "value": "943bc8c2-bc9f-4ff1-a9b5-77d1082e2c24"
+                },
+                {
+                    "name": "pincodeChecked",
+                    "value": "true"
+                },
+                {
+                    "name": "site_version",
+                    "value": "JCP"
+                },
+                {
+                    "name": "WZRK_EV",
+                    "value": "%7B%22wzrk_fetch%22%3A%5B4%2C1783851555%2C1785089016%5D%7D"
+                },
+                {
+                    "name": "WZRK_ACCOUNT_ID",
+                    "value": "%22884-7RK-Z77Z%22"
+                },
+                {
+                    "name": "numVisits",
+                    "value": "\"{\\\"https://www.jiomart.com/profile\\\":8,\\\"https://www.jiomart.com/profile/address\\\":4}\""
+                },
+                {
+                    "name": "platform",
+                    "value": "website"
+                },
+                {
+                    "name": "pincode",
+                    "value": "\"754004\""
+                },
+                {
+                    "name": "login_status",
+                    "value": "not_logged_in"
+                },
+                {
+                    "name": "activeTab",
+                    "value": "low-price"
+                },
+                {
+                    "name": "paramsCollection",
+                    "value": "application_id=685945f46c8c7aee3f3af605&return_ui_url=https%3A%2F%2Fwww.jiomart.com%2Fauth%2Flogin%3FredirectUrl%3D%2Fprofile%26cl%3Dtrue"
+                },
+                {
+                    "name": "userJourney",
+                    "value": "quick"
+                },
+                {
+                    "name": "WZRK_L",
+                    "value": "%7B%221%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIoCcD2AzAlgGzgGiTS1wVAGMwB9VKMVAVzAXQENsBnGAXwMwBMEIABxCALAFoA7ACUA0uIBakyQpAEoAcwQBGAi3SkQ2TACNBAdxgnx7PgGtxANwBMAOkmuAzGsKo6ZVGxBAAswMCh2EC4uIAA%26optOut%3Dfalse%26rn%3D1%26i%3D1783851555%26sn%3D0%22%7D%2C%222%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpage%26d%3DN4IglgJiBcIBxwCwFoDsAlA0sgWq1OIANCAA4DmMAjCQIYBmMoANmAEYwgDuApm8gGcIAa2QA3AEwA6VFIDMxMgCcA9gBcVAYxXNOACzVrSAkAF8SmivsPHoAejtcnUgFZgVAW1pK1U7R7taAFc1PTtmFXIwADsAfiUeCDAEzTUAVSVmAF47UlV6MGYeRQB1HCwAfQBhAEEAWQAFJm4wD1IYAAYSLjA1Zk0YAG0AXW6BAegu7noJ4HNuLSZ5rmiIcc7u1ZmlzYhF6DnTUyAAAA%253D%253D%26rn%3D2%26i%3D1783851555%26sn%3D0%22%7D%2C%223%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIYDcYDswgDROWAcgIYC2ciA7gF4BOA1gPoBmMYAxgBba5gAihYhBKEzwALAF8cASwAmCEAA4FogLQB2AEoBpFQC01a3VygBzBAEYchRkJAAbKQCN55GI5UBnGbRXIATAB0agEAzMbUAPZgEawRdvLsYGBQHiCSIADqutr0AMIAggCyAAq25FLEUAgADDjlYHasCADaALp1Hk3wtSDkjF3A6eQxQkNoMp01deP9o9MyI%252FCD4uJAAAA%253D%26rn%3D3%26i%3D1783851555%26sn%3D0%22%7D%2C%224%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIoCcD2AzAlgGzgGiTS1wVAGMwB9VKMVAVzAXQENsBnGAXwMwBMEIABxCALAFoA7ACUA0uIBakyQpAEoAcwQBGAi3SkQ2TACNBAdxgnx7PgGtxANwBMAOkmuAzGsKo6ZVGxBAAswMCh2EC4uIAA%26optOut%3Dfalse%26rn%3D4%26i%3D1783852850%26sn%3D0%22%7D%2C%225%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpage%26d%3DN4IglgJiBcIBxwCwFoDsAlA0sgWq1OIANCAA4DmMAjCQIYBmMoANmAEYwgDuApm8gGcIAa2QA3AEwA6VFIDMxMgCcA9gBcVAYxXNOACzVrSAkAF8SmivsPHoAejtcnUgFZgVAW1pK1U7R7taAFc1PTtmFXIwADsAfiUeCDAEzTUAVSVmAF47UlV6MGYeRQB1HCwAfQBhAEEAWQAFJm4wD1IYAAYSLjA1Zk0YAG0AXW6BAegu7noJ4HNuLSZ5rmiIcc7u1ZmlzYhF6DnTUyAAAA%253D%253D%26rn%3D5%26i%3D1783852850%26sn%3D0%22%7D%2C%226%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIYDcYDswgDROWAcgIYC2ciA7gF4BOA1gPoBmMYAxgBba5gAihYhBKEzwALAF8cASwAmCEAA4FogLQB2AEoBpFQC01a3VygBzBAEYchRkJAAbKQCN55GI5UBnGbRXIATAB0agEAzMbUAPZgEawRdvLsYGBQHiCSIADqutr0AMIAggCyAAq25FLEUAgADDjlYHasCADaALp1Hk3wtSDkjF3A6eQxQkNoMp01deP9o9MyI%252FCD4uJAAAA%253D%26rn%3D6%26i%3D1783852850%26sn%3D0%22%7D%2C%227%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIoCcD2AzAlgGzgGiTS1wVAGMwB9VKMVAVzAXQENsBnGAXwMwBMEIABxCALAFoA7ACUA0uIBakyQpAEoAcwQBGAi3SkQ2TACNBAdxgnx7PgGtxANwBMAOkmuAzGsKo6ZVGxBAAswMCh2EC4uIAA%26optOut%3Dfalse%26rn%3D7%26i%3D1783852868%26sn%3D0%22%7D%2C%228%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpage%26d%3DN4IglgJiBcIBxwCwFoDsAlA0sgWq1OIANCAA4DmMATCQIYBmMoANmAEYwgDuApm8gGcIAa2QA3KgDpUkgMzEyAJwD2AF2UBjZc04ALVatICQAXxIaKeg0egB6W10eSAVmGUBbWotWSt726Qq9GDMPAoA6jhYAPoAwgCCALIACkzcYO6kMAAMJFxgqswaMADaALp5AsXQudz01cBm3JpMTVwAdhBVOXmd9a29EC3QjSYmQAAA%26rn%3D8%26i%3D1783852868%26sn%3D0%22%7D%2C%229%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIoCcD2AzAlgGzgGiTS1wVAGMwB9VKMVAVzAXQENsBnGAXwMwBMEIABxCALAFoA7ACUA0uIBakyQpAEoAcwQAmAi3SkQ2TACNBAdxgnx7PgGtxAN20A6SS4DMawqjplU2IIAFmBgUOwgXFxAA%253D%253D%26optOut%3Dfalse%26rn%3D9%26i%3D1783852895%26sn%3D0%22%7D%2C%2210%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpage%26d%3DN4IglgJiBcIBxwCwFoDsAlA0sgWq1OIANCAA4DmMAzCQIYBmMoANmAEYwgDuApm8gGcIAa2QA3AEwA6VFKrEyAJwD2AF2UBjZc04ALVatICQAXxIaKeg0egB6W10dSAVmGUBbWotVSt726Qq9GDMPAoA6jhYAPoAwgCCALIACkzcYO6kMAAMJFxgqswaMADaALp5AsXQudz01cBm3JpMTVwAdhBVOXmd9a29EC3QjSYmQAAA%26rn%3D10%26i%3D1783852895%26sn%3D0%22%7D%2C%2211%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIoCcD2AzAlgGzgGiTS1wVAGMwB9VKMVAVzAXQENsBnGAXwMwBMEIABxCALAFoA7ACUA0uIBakyQpAEoAcwQBmAi3SkQ2TACNBAdxgnx7PgGtxANwBMAOkmvtawqjplU2IIAFmBgUOwgXFxAA%253D%253D%26optOut%3Dfalse%26rn%3D11%26i%3D1783853001%26sn%3D0%22%7D%2C%2212%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpage%26d%3DN4IglgJiBcIBxwCwFoDsAlA0sgWq1OIANCAA4DmMiJAhgGYygA2YARjCAO4CmryAzhADWyAG4AmAHSpJAZmJkATgHsALsoDGyphwAWq1aX4gAviQ0U9Bo9AD0tzo8kArMMoC2NRaslb3t0hU6MCZuBQB1HCwAfQBhAEEAWQAFRi4wd1IYAAYSTjBVJg0YAG0AXTz%252BYuhcrjpq4DMuTUYmzgA7CCqcvM761t6IFuhGkxMgA%253D%253D%26rn%3D12%26i%3D1783853001%26sn%3D0%22%7D%2C%2213%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIoCcD2AzAlgGzgGiTS1wVAGMwB9VKMVAVzAXQENsBnGAXwMwBMEIABxCALAFoA7ACUA0uIBakyQpAEoAcwSiCLdKRDZMAI0EB3GMfHs%252BAa3EA3AEwA6SS4DMawqjplU2IIAFmBgUOwgXFxAA%253D%253D%26optOut%3Dfalse%26rn%3D13%26i%3D1783853435%26sn%3D0%22%7D%2C%2214%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpage%26d%3DN4IglgJiBcIBxwCwFoDsAlA0sgWq1OIANCAA4DmMArCQIYBmMoANmAEYwgDuApm8gGcIAa2QA3AEwA6VFIDMxMgCcA9gBcVAYxXNOACzVrSAkAF8SmivsPHoAejtcnUgFZgVAW1pK1U7R7tSVXowZh47WggIJR4BExIAdRwsAH0AYQBBAFkABSZuMA9SGAAGEi4wNWZNGABtAF1ygRroMu56FuBzbi0mbq4AOwhm0vKhjr6xiF7oLtNTIAA%253D%26rn%3D14%26i%3D1783853435%26sn%3D0%22%7D%2C%2215%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIoCcD2AzAlgGzgGiTS1wVAGMwB9VKMVAVzAXQENsBnGAXwMwBMEIABxCALAFoA7ACUA0uIBakyQpAEoAcwQBWAi3SkQ2TACNBAdxgnx7PgGtxANwBMAOkmuAzGsKo6ZVGxBAAswMCh2EC4uIAA%26optOut%3Dfalse%26rn%3D15%26i%3D1783853486%26sn%3D0%22%7D%2C%2216%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpage%26d%3DN4IglgJiBcIBxwCwFoDsAlA0sgWq1OIANCAA4DmMAbCQIYBmMoANmAEYwgDuApm8gGcIAa2QA3AEwA6VFIDMxMgCcA9gBcVAYxXNOACzVrSAkAF8SmivsPHoAejtcnUgFZgVAW1pK1U7R7tSVXowZh5FAHUcLAB9AGEAQQBZAAUmbjAPUhgABhIuMDVmTRgAbQBdfIES6Dzuehrgc24tJmauADsIatz8roa2vohW6CbTUyAA%26rn%3D16%26i%3D1783853486%26sn%3D0%22%7D%2C%2217%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIoCcD2AzAlgGzgGiTS1wVAGMwB9VKMVAVzAXQENsBnGAXwMwBMEIABxCALAFoA7ACUA0uIBakyQpAEoAcwQBGAi3SkQ2TACNBAdxgnx7PgGtxANwBMAOkmuAzGsKo6ZVGxBAAswMCh2EC4uIAA%26optOut%3Dfalse%26rn%3D17%26i%3D1783862110%26sn%3D0%22%7D%2C%2218%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpage%26d%3DN4IglgJiBcIBxwCwFoDsAlA0sgWq1OIANCAA4DmMAjCQIYBmMoANmAEYwgDuApm8gGcIAa2QA3AEwA6VFIDMxMgCcA9gBcVAYxXNOACzVrSAkAF8SmivsPHoAejtcnUgFZgVAW1pK1U7R7tSVXowZh5FAHUcLAB9AGEAQQBZAAUmbjAPUhgABhIuMDVmTRgAbQBdfIES6Dzuehrgc24tJmauADsIatz8roa2vohW6CbTUyAA%26rn%3D18%26i%3D1783862110%26sn%3D0%22%7D%2C%2219%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIYDcYDswgDROWAcgIYC2ciA7gF4BOA1gPoBmMYAxgBba5gAihYhBKEzwALAF8cASwAmCEAA4FogLQB2AEoBpFQC01a3VygBzBAEYchRkJAAbKQCN55GI5UBnGbRXIATAB0agEAzMbUAPZgEawRdvLsYGBQHiCSIADqutr0AMIAggCyAAq25FLEUAgADDjlYHasCADaALp1Hk3wtSDkjF3A6eQxQkNoMp01deP9o9MyI%252FCD4uJAAAA%253D%26rn%3D19%26i%3D1783862110%26sn%3D0%22%7D%2C%2220%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIoCcD2AzAlgGzgGiTS1wVAGMwB9VKMVAVzAXQENsBnGAXwMwBMEIABxCALAFoA7ACUA0uIBakyQpAEoAcwQBGAi3SkQ2TACNBAdxgnx7PgGtxANwBMAOkmuAzGsKo6ZVGxBAAswMCh2EC4uIAA%26optOut%3Dfalse%26rn%3D20%26i%3D1783862172%26sn%3D0%22%7D%2C%2221%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpage%26d%3DN4IglgJiBcIBxwCwFoDsAlA0sgWq1OIANCAA4DmMATCQIYBmMoANmAEYwgDuApm8gGcIAa2QA3KgDpUkgMzEyAJwD2AF2UBjZc04ALVatICQAXxIaKeg0egB6W10eSAVmGUBbWotWSt726Qq9GDMPAoA6jhYAPoAwgCCALIACkzcYO6kMAAMJFxgqswaMADaALp5AsXQudz01cBm3JpMTVwAdhBVOXmd9a29EC3QjSYmQAAA%26rn%3D21%26i%3D1783862172%26sn%3D0%22%7D%2C%2222%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIoCcD2AzAlgGzgGiTS1wVAGMwB9VKMVAVzAXQENsBnGAXwMwBMEIABxCALAFoA7ACUA0uIBakyQpAEoAcwQBGAi3SkQ2TACNBAdxgnx7PgGtxANwBMAOkmvRawqjplU2IIAFmBgUOwgXFxAA%253D%253D%26optOut%3Dfalse%26rn%3D22%26i%3D1785089016%26sn%3D0%22%7D%2C%2223%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpage%26d%3DN4IglgJiBcIBxwCwFoDsAlA0sgWq1OIANCAA4DmMAjCQIYBmMoANmAEYwgDuApm8gGcIAa2QA3AEwA6VFMTEyAJwD2AF2UBjZc04ALVatICQAXxIaKeg0egB6W10dSAVmGUBbWotVSt726Qq9GDMPLa0EBCKPALGJADqOFgA%252BgDCAIIAsgAKTNxg7qQwAAwkXGCqzBowANoAumUC1dCl3PTNwGbcmkxdXAB2EE0lZYPtvaMQPdCdJiZAAAA%253D%26rn%3D23%26i%3D1785089016%26sn%3D0%22%7D%2C%2224%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIYDcYDswgDROWAcgIYC2ciA7gF4BOA1gPoBmMYAxgBba5gAihYhBKEzwALAF8cASwAmCEAA4FogLQB2AEoBpFQC01a3VygBzBAEYchRkJAAbKQCN55GI5UBnGbRXIATAB0agGixtQA9mDhrOF28uxgYFAeIJIgAOq62vQAwgCCALIACrbkUsRQCAAMOGVgdqwIANoAurUejfA1IOSMncBp5NFCg2gyHdW1Y30jUzLD8APi4kAA%26rn%3D24%26i%3D1785089016%26sn%3D0%22%7D%7D"
+                },
+                {
+                    "name": "nms_delivery_config_info",
+                    "value": "{\"journey\":\"quickcommerce\",\"meta\":{\"zone\":\"east\",\"mbv_config\":[{\"department\":\"Groceries\",\"min_basket_value\":99}],\"polygon_id\":\"U1QE_QC_11b47dae\",\"distance\":979.4229},\"delivery_promise\":{\"min\":\"2026-07-12T13:26:08Z\",\"max\":\"2026-07-12T13:46:08Z\",\"message\":\"Delivery in 10 to 30 mins\",\"secondary_message\":\"Scheduled delivery\"},\"store_code\":\"U1QE\",\"store_ids\":857,\"expiry\":\"Sun Jul 12 2026 19:16:07 GMT+0530 (India Standard Time)\"}"
+                },
+                {
+                    "name": "jio_qc_stores",
+                    "value": "{\"FASHION\":{\"uid\":16369,\"code\":\"T1RA\",\"display_name\":\"T1RA-Fashioln-TRENDS-QC\",\"priority\":1,\"processing_time\":0,\"promise\":{\"min\":\"2026-07-12T14:16:08Z\",\"max\":\"2026-07-12T15:16:08Z\"},\"journey_wise_promise\":[{\"journey\":\"quickcommerce\",\"meta\":{\"zone\":\"east\",\"mbv_config\":[{\"department\":\"Groceries\",\"min_basket_value\":99}],\"polygon_id\":null,\"distance\":405.2812},\"delivery_promise\":{\"min\":\"2026-07-12T14:16:08Z\",\"max\":\"2026-07-12T15:16:08Z\",\"message\":\"Delivery in 1 to 2 hrs\"}}],\"seller_id\":1,\"address\":{\"address2\":\"\",\"pincode\":\"754004\",\"city\":\"BERHAMPUR\",\"country\":\"India\",\"state\":\"ODISHA\",\"country_code\":\"IN\",\"latitude\":20.1409871,\"longitude\":86.0605374},\"timings\":{\"open\":true,\"opening\":{\"hour\":10,\"minute\":0},\"closing\":{\"hour\":19,\"minute\":0}},\"is_accepting_order\":true,\"department_name\":\"Fashion\",\"distance\":405.2812,\"store_logo_url\":null,\"store_banner_url\":null,\"store_banner_portrait_url\":null,\"promisetime\":\"120\",\"additional_stores\":[]},\"GROCERIES\":{\"uid\":857,\"code\":\"U1QE\",\"display_name\":\"Groceries-U1QE\",\"priority\":1,\"processing_time\":0,\"promise\":{\"min\":\"2026-07-12T13:26:08Z\",\"max\":\"2026-07-12T13:46:08Z\"},\"journey_wise_promise\":[{\"journey\":\"quickcommerce\",\"meta\":{\"zone\":\"east\",\"mbv_config\":[{\"department\":\"Groceries\",\"min_basket_value\":99}],\"polygon_id\":\"U1QE_QC_11b47dae\",\"distance\":979.4229},\"delivery_promise\":{\"min\":\"2026-07-12T13:26:08Z\",\"max\":\"2026-07-12T13:46:08Z\",\"message\":\"Delivery in 10 to 30 mins\",\"secondary_message\":\"Scheduled delivery\"},\"store_code\":\"U1QE\",\"store_ids\":857,\"expiry\":\"Sun Jul 12 2026 19:16:07 GMT+0530 (India Standard Time)\"}],\"seller_id\":1,\"address\":{\"address2\":\"\",\"pincode\":\"754004\",\"city\":\"BERHAMPUR\",\"country\":\"India\",\"state\":\"ODISHA\",\"country_code\":\"IN\",\"latitude\":20.141078,\"longitude\":86.0532147},\"timings\":{\"open\":true,\"opening\":{\"hour\":8,\"minute\":0},\"closing\":{\"hour\":22,\"minute\":0}},\"is_accepting_order\":true,\"department_name\":\"Groceries\",\"distance\":979.4229,\"store_logo_url\":null,\"store_banner_url\":null,\"store_banner_portrait_url\":null,\"promisetime\":\"30\",\"additional_stores\":[]}}"
+                },
+                {
+                    "name": "WZRK_TV_CONTROLS",
+                    "value": "false"
+                },
+                {
+                    "name": "appExpandedCount",
+                    "value": "0"
+                },
+                {
+                    "name": "page_type",
+                    "value": "other"
+                },
+                {
+                    "name": "jio_qc_displaytime",
+                    "value": "30"
+                },
+                {
+                    "name": "WZRK_META",
+                    "value": "%7B%22useIP%22%3Afalse%7D"
+                },
+                {
+                    "name": "HPhone",
+                    "value": "243d85525b37716376fcfcb35fb7f8ea317bf168a84c9a04e35611dc3aa2d4ad"
+                },
+                {
+                    "name": "selectedAddress",
+                    "value": "\"Tata, Tata, BERHAMPUR, ODISHA, India, 754004\""
+                },
+                {
+                    "name": "WZRK_BLOCK",
+                    "value": "true"
+                },
+                {
+                    "name": "deliveryAddressSelected",
+                    "value": "{\"selected\":true,\"pincode\":\"754004\",\"latitude\":20.1444,\"longitude\":86.0619}"
+                },
+                {
+                    "name": "tabBGImage",
+                    "value": ""
+                },
+                {
+                    "name": "copilot_widget_theme",
+                    "value": "dark"
+                },
+                {
+                    "name": "journey",
+                    "value": "quick"
+                }
+            ]
+        },
+        {
+            "origin": "https://account.relianceretail.com",
+            "localStorage": [
+                {
+                    "name": "device_fingerprint",
+                    "value": "\"02fc8265-32a5-4f-eyJwbGF0Zm9ybSI6\""
+                },
+                {
+                    "name": "source_id",
+                    "value": "\"7d70fe6e-f55a-49b1-b125-92f590342273\""
+                },
+                {
+                    "name": "stable_fingerprint",
+                    "value": "\"eyJwbGF0Zm9ybSI6IldpbjMyIiwidXNl\""
+                }
+            ]
+        }
+    ]
+}

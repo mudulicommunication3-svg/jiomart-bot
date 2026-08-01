@@ -1,0 +1,328 @@
+{
+    "cookies": [
+        {
+            "name": "AKA_A2",
+            "value": "A",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1785324859.677751,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "__cf_bm",
+            "value": "U1MqXESG_AXWMgdlDGIZoPC6tEK8Co2vah4XiIdhRCs-1785321261.2701488-1.0.1.1-XeaHiXgLUyiGLsu8KP72Twtcj6QKfXAIs_uCklBPgDgZ30uIzA9KJJdHvpBYoopBvDufVfcWwqhwdtV9qmwpbiARcdSS69kGDCSTsqYDBxGuOV0GgXe.An_BhC9neWWA",
+            "domain": ".pixelbin.io",
+            "path": "/",
+            "expires": 1785323060.920672,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "app_location_details",
+            "value": "%7B%22country%22%3A%22INDIA%22%2C%22country_iso_code%22%3A%22IN%22%2C%22city%22%3A%22MUMBAI%22%2C%22pincode%22%3A%22400001%22%2C%22state%22%3A%22MAHARASHTRA%22%7D",
+            "domain": "www.jiomart.com",
+            "path": "/",
+            "expires": 1785407666,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "anonymous_id",
+            "value": "2444c8559cfa474caa599a632e99bd8b",
+            "domain": ".www.jiomart.com",
+            "path": "/",
+            "expires": 1793097266.784749,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "old_browser_anonymous_id",
+            "value": "2444c8559cfa474caa599a632e99bd8b",
+            "domain": ".www.jiomart.com",
+            "path": "/",
+            "expires": 1793097266.784924,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "anonymous_sig",
+            "value": "9fb8058c5425dc675bb914c95f2ce6ee6d029ff65e4bc5b4a020af278845188b",
+            "domain": ".www.jiomart.com",
+            "path": "/",
+            "expires": 1793097266.785049,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "app_geolocation",
+            "value": "%7B%22latitude%22%3A%2219.0760%22%2C%22longitude%22%3A%2272.8777%22%2C%22polygon_ids%22%3A%5B%5D%7D",
+            "domain": "www.jiomart.com",
+            "path": "/",
+            "expires": 1785407667,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "__cf_bm",
+            "value": "LMwE2yxpuB5L3RtvzvRuIHc6LBJ8LYLCgjNx7TrO5EE-1785321267.4496357-1.0.1.1-fsTtMCsbASVJEiwBNzSjRthm5SkiCWz1lu9_yOHWfY7ZZQIk8PzhLlvEDSkimV2pV7FYaibuSIKF6pxOn1I.qSbH_MGxm.UE2.VTqB2BLCadu_1LK7gFnlVLkPbnE1g0",
+            "domain": ".copilot.live",
+            "path": "/",
+            "expires": 1785323067.102027,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "g",
+            "value": "ZGT5409xBvnLJ3yijipm_1785321268302",
+            "domain": ".creativecdn.com",
+            "path": "/",
+            "expires": 1816857267.895983,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "c",
+            "value": "ZGT5409xBvnLJ3yijipm_EfxWTKxWOxsxvi0JKAy2_1785321268302",
+            "domain": ".creativecdn.com",
+            "path": "/",
+            "expires": 1816857267.896119,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://jiomart.com",
+            "_crHasCrossSiteAncestor": true
+        },
+        {
+            "name": "ts",
+            "value": "1785321268",
+            "domain": ".creativecdn.com",
+            "path": "/",
+            "expires": 1816857267.896223,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://jiomart.com",
+            "_crHasCrossSiteAncestor": true
+        },
+        {
+            "name": "_gcl_au",
+            "value": "1.1.240234832.1785321268",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1793097267,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ga",
+            "value": "GA1.1.867216514.1785321268",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1819881267.937802,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ga_XHR9Q2M3VV",
+            "value": "GS2.1.s1785321267$o1$g0$t1785321268$j59$l0$h1510107099",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1819881268.007007,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "WZRK_S_884-7RK-Z77Z",
+            "value": "%7B%22p%22%3A1%7D",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1785322468,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_fbp",
+            "value": "fb.1.1785321268223.2002300784",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 1793097268,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "RT",
+            "value": "\"z=1&dm=www.jiomart.com&si=2c90b44c-0e6b-4025-91ec-63065a68279b&ss=ms5y6jn4&sl=2&tt=1xf&rl=1&obo=1&ld=82v&r=1b8rnrdfk&hd=82w\"",
+            "domain": ".www.jiomart.com",
+            "path": "/",
+            "expires": 1785926069,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ga",
+            "value": "GA1.1.792990518.1785321275",
+            "domain": ".relianceretail.com",
+            "path": "/",
+            "expires": 1819881275.274489,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "_ga_XGZ513W4JV",
+            "value": "GS2.1.s1785321275$o1$g0$t1785321275$j60$l0$h0",
+            "domain": ".relianceretail.com",
+            "path": "/",
+            "expires": 1819881275.308804,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "cra_access_token",
+            "value": "Njg1OTQ1ZjQ2YzhjN2FlZTNmM2FmNjA1OlRwS3c3d0Q5aA==",
+            "domain": ".jiomart.com",
+            "path": "/",
+            "expires": 253402300799,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+        }
+    ],
+    "origins": [
+        {
+            "origin": "https://account.relianceretail.com",
+            "localStorage": [
+                {
+                    "name": "device_fingerprint",
+                    "value": "\"522e2a3e-588f-42-eyJwbGF0Zm9ybSI6\""
+                },
+                {
+                    "name": "stable_fingerprint",
+                    "value": "\"eyJwbGF0Zm9ybSI6IldpbjMyIiwidXNl\""
+                }
+            ]
+        },
+        {
+            "origin": "https://www.jiomart.com",
+            "localStorage": [
+                {
+                    "name": "WZRK_L",
+                    "value": "%7B%221%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIoCcD2AzAlgGzgGiTS1wVAGMwB9VKMVAVzAXQENsBnGAXwMwBMEIABxCALAFoA7ACUA0uIBakyQpAEoAcwQBGAi3SkQ2TACNBAdxgnx7PgGtxANwBMAOkmvRawqjplU2IIAFmBgUOwgXFxAA%253D%253D%26optOut%3Dfalse%26rn%3D1%26i%3D1785321268%26sn%3D0%22%7D%2C%222%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpage%26d%3DN4IglgJiBcIBxwCwFoDsAlA0sgWq1OIANCAA4DmMAjCQIYBmMoANmAEYwgDuApm8gGcIAa2QA3AEwA6VFMTEyAJwD2AF2UBjZc04ALVatICQAXxIaKeg0egB6W10dSAVmGUBbWotVSt727QArqq6tszK5GAAdgD8ijwQYPEaqgCqiswAvLakKvRgzDwBEBDxAsYkAOo4WAD6AMIAggCyAApM3GDupDAADCRcYKrMGjAA2gC6AwKj0P3c9LPAZtyaTCtcURAzfQNbi%252Bt7EGvQyyYmQAA%253D%26rn%3D2%26i%3D1785321268%26sn%3D0%22%7D%2C%223%22%3A%7B%22q%22%3A%22https%3A%2F%2Fin1.clevertap-prod.com%2Fa%3Ft%3D96%26type%3Dpush%26d%3DN4IgLgngDgpiBcIYDcYDswgDROWAcgIYC2ciA7gF4BOA1gPoBmMYAxgBba5gAihYhBKEzwALAF8cASwAmCEAA4FogLQB2AEoBpFQC01a3VygBzBAEYchRkJAAbKQCN55GI5UBnGbRXIATAB0agGixtQA9mDhrOF28uxgYFAeIJIgAOq62vQAwgCCALIACrbkUsRQCAAMOGVgdqwIANoAurUejfA1IOSMncBp5NFCg2gyHdW1Y30jUzLD8APi4kAA%26rn%3D3%26i%3D1785321268%26sn%3D0%22%7D%7D"
+                },
+                {
+                    "name": "jio_quick_commerce",
+                    "value": "yes"
+                },
+                {
+                    "name": "nms_delivery_config_info",
+                    "value": "{\"journey\":\"quickcommerce\",\"meta\":{\"zone\":\"west\",\"mbv_config\":[{\"department\":\"Groceries\",\"min_basket_value\":99}],\"polygon_id\":\"T6HZ_QC_5475bdd9\",\"distance\":820.3851,\"eta_mins\":30},\"delivery_promise\":{\"min\":\"2026-07-29T11:04:26Z\",\"max\":\"2026-07-29T11:04:26Z\",\"message\":\"Delivery in 30 mins\",\"secondary_message\":\"Scheduled delivery\"},\"store_code\":\"T6HZ\",\"store_ids\":3442,\"expiry\":\"Wed Jul 29 2026 16:34:26 GMT+0530 (India Standard Time)\"}"
+                },
+                {
+                    "name": "jio_serviceable_stores",
+                    "value": "[{\"uid\":3442,\"code\":\"T6HZ\",\"display_name\":\"Groceries-T6HZ\",\"priority\":1,\"processing_time\":0,\"promise\":{\"min\":\"2026-07-29T11:04:26Z\",\"max\":\"2026-07-29T11:04:26Z\"},\"journey_wise_promise\":[{\"journey\":\"quickcommerce\",\"meta\":{\"zone\":\"west\",\"mbv_config\":[{\"department\":\"Groceries\",\"min_basket_value\":99}],\"polygon_id\":\"T6HZ_QC_5475bdd9\",\"distance\":820.3851,\"eta_mins\":30},\"delivery_promise\":{\"min\":\"2026-07-29T11:04:26Z\",\"max\":\"2026-07-29T11:04:26Z\",\"message\":\"Delivery in 30 mins\",\"secondary_message\":\"Scheduled delivery\"},\"store_code\":\"T6HZ\",\"store_ids\":3442,\"expiry\":\"Wed Jul 29 2026 16:34:26 GMT+0530 (India Standard Time)\"}],\"seller_id\":1,\"address\":{\"address2\":\"\",\"pincode\":\"400001\",\"city\":\"MUMBAI\",\"country\":\"India\",\"state\":\"MAHARASHTRA\",\"country_code\":\"IN\",\"latitude\":18.93182,\"longitude\":72.83307},\"timings\":{\"open\":true,\"opening\":{\"hour\":6,\"minute\":0},\"closing\":{\"hour\":23,\"minute\":0}},\"is_accepting_order\":true,\"department_name\":\"Groceries\",\"distance\":820.3851,\"store_logo_url\":null,\"store_banner_url\":null,\"store_banner_portrait_url\":null,\"promisetime\":\"30\",\"additional_stores\":[]},{\"uid\":259630,\"code\":\"TVC8\",\"display_name\":\"TVC8-FASHION-QC\",\"priority\":1,\"processing_time\":0,\"promise\":{\"min\":\"2026-07-29T11:34:26Z\",\"max\":\"2026-07-29T12:34:26Z\"},\"journey_wise_promise\":[{\"journey\":\"quickcommerce\",\"meta\":{\"zone\":\"west\",\"mbv_config\":[{\"department\":\"Groceries\",\"min_basket_value\":99}],\"polygon_id\":null,\"distance\":950.5817},\"delivery_promise\":{\"min\":\"2026-07-29T11:34:26Z\",\"max\":\"2026-07-29T12:34:26Z\",\"message\":\"Delivery in 1 to 2 hrs\"}}],\"seller_id\":1,\"address\":{\"address2\":\"\",\"pincode\":\"400002\",\"city\":\"MUMBAI\",\"country\":\"India\",\"state\":\"MAHARASHTRA\",\"country_code\":\"IN\",\"latitude\":18.944301,\"longitude\":72.829661},\"timings\":{\"open\":true,\"opening\":{\"hour\":10,\"minute\":0},\"closing\":{\"hour\":19,\"minute\":0}},\"is_accepting_order\":true,\"department_name\":\"Fashion\",\"distance\":950.5817,\"store_logo_url\":null,\"store_banner_url\":null,\"store_banner_portrait_url\":null,\"promisetime\":\"120\",\"additional_stores\":[]}]"
+                },
+                {
+                    "name": "visitor_id",
+                    "value": "c70dbfd7-a268-465d-8ec7-350fe29476b7"
+                },
+                {
+                    "name": "jio_qc_stores",
+                    "value": "{\"GROCERIES\":{\"uid\":3442,\"code\":\"T6HZ\",\"display_name\":\"Groceries-T6HZ\",\"priority\":1,\"processing_time\":0,\"promise\":{\"min\":\"2026-07-29T11:04:26Z\",\"max\":\"2026-07-29T11:04:26Z\"},\"journey_wise_promise\":[{\"journey\":\"quickcommerce\",\"meta\":{\"zone\":\"west\",\"mbv_config\":[{\"department\":\"Groceries\",\"min_basket_value\":99}],\"polygon_id\":\"T6HZ_QC_5475bdd9\",\"distance\":820.3851,\"eta_mins\":30},\"delivery_promise\":{\"min\":\"2026-07-29T11:04:26Z\",\"max\":\"2026-07-29T11:04:26Z\",\"message\":\"Delivery in 30 mins\",\"secondary_message\":\"Scheduled delivery\"},\"store_code\":\"T6HZ\",\"store_ids\":3442,\"expiry\":\"Wed Jul 29 2026 16:34:26 GMT+0530 (India Standard Time)\"}],\"seller_id\":1,\"address\":{\"address2\":\"\",\"pincode\":\"400001\",\"city\":\"MUMBAI\",\"country\":\"India\",\"state\":\"MAHARASHTRA\",\"country_code\":\"IN\",\"latitude\":18.93182,\"longitude\":72.83307},\"timings\":{\"open\":true,\"opening\":{\"hour\":6,\"minute\":0},\"closing\":{\"hour\":23,\"minute\":0}},\"is_accepting_order\":true,\"department_name\":\"Groceries\",\"distance\":820.3851,\"store_logo_url\":null,\"store_banner_url\":null,\"store_banner_portrait_url\":null,\"promisetime\":\"30\",\"additional_stores\":[]},\"FASHION\":{\"uid\":259630,\"code\":\"TVC8\",\"display_name\":\"TVC8-FASHION-QC\",\"priority\":1,\"processing_time\":0,\"promise\":{\"min\":\"2026-07-29T11:34:26Z\",\"max\":\"2026-07-29T12:34:26Z\"},\"journey_wise_promise\":[{\"journey\":\"quickcommerce\",\"meta\":{\"zone\":\"west\",\"mbv_config\":[{\"department\":\"Groceries\",\"min_basket_value\":99}],\"polygon_id\":null,\"distance\":950.5817},\"delivery_promise\":{\"min\":\"2026-07-29T11:34:26Z\",\"max\":\"2026-07-29T12:34:26Z\",\"message\":\"Delivery in 1 to 2 hrs\"}}],\"seller_id\":1,\"address\":{\"address2\":\"\",\"pincode\":\"400002\",\"city\":\"MUMBAI\",\"country\":\"India\",\"state\":\"MAHARASHTRA\",\"country_code\":\"IN\",\"latitude\":18.944301,\"longitude\":72.829661},\"timings\":{\"open\":true,\"opening\":{\"hour\":10,\"minute\":0},\"closing\":{\"hour\":19,\"minute\":0}},\"is_accepting_order\":true,\"department_name\":\"Fashion\",\"distance\":950.5817,\"store_logo_url\":null,\"store_banner_url\":null,\"store_banner_portrait_url\":null,\"promisetime\":\"120\",\"additional_stores\":[]}}"
+                },
+                {
+                    "name": "requestLogin",
+                    "value": "Y"
+                },
+                {
+                    "name": "jio_lat_long",
+                    "value": "{\"latitude\":\"19.0760\",\"longitude\":\"72.8777\"}"
+                },
+                {
+                    "name": "WZRK_TV_CONTROLS",
+                    "value": "false"
+                },
+                {
+                    "name": "_gcl_ls",
+                    "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1785321267918},\"expires\":1793097267918}}"
+                },
+                {
+                    "name": "page_type",
+                    "value": "other"
+                },
+                {
+                    "name": "loglevel",
+                    "value": "ERROR"
+                },
+                {
+                    "name": "jio_mbv_details",
+                    "value": "{\"groceries\":\"99\",\"updated_at\":\"2026-07-29T10:34:26.595Z\"}"
+                },
+                {
+                    "name": "jio_qc_displaytime",
+                    "value": "30"
+                },
+                {
+                    "name": "WZRK_META",
+                    "value": "%7B%22useIP%22%3Afalse%7D"
+                },
+                {
+                    "name": "moloco_persistent_id",
+                    "value": "2a5060c7-953a-45c1-adc5-b3f0bd664682"
+                },
+                {
+                    "name": "site_version",
+                    "value": "JCP"
+                },
+                {
+                    "name": "pin",
+                    "value": "{\"country\":\"INDIA\",\"country_iso_code\":\"IN\",\"pincode\":\"400001\",\"city\":\"MUMBAI\",\"state\":\"MAHARASHTRA\"}"
+                },
+                {
+                    "name": "WZRK_EV",
+                    "value": "%7B%22wzrk_fetch%22%3A%5B1%2C1785321268%2C1785321268%5D%7D"
+                },
+                {
+                    "name": "WZRK_BLOCK",
+                    "value": "true"
+                },
+                {
+                    "name": "WZRK_ACCOUNT_ID",
+                    "value": "%22884-7RK-Z77Z%22"
+                },
+                {
+                    "name": "platform",
+                    "value": "website"
+                },
+                {
+                    "name": "paramsCollection",
+                    "value": "application_id=685945f46c8c7aee3f3af605&return_ui_url=https%3A%2F%2Fwww.jiomart.com%2Fauth%2Flogin%3FredirectUrl%3D%2Fprofile%2Faddress%26cl%3Dtrue"
+                },
+                {
+                    "name": "userJourney",
+                    "value": "quick"
+                },
+                {
+                    "name": "journey",
+                    "value": "quick"
+                }
+            ]
+        }
+    ]
+}

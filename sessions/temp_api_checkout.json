@@ -1,0 +1,330 @@
+{
+    "chat_id": "7351664603",
+    "active_key": "D:\\JioMartBot\\sessions\\auth_7682940715jymy.json",
+    "address_hex_id": "6a69db81b89c8e13a5d0589e",
+    "cart_id": "6a6a6d8b42e0871ac10cffe9",
+    "cart_items_count": 1,
+    "cart_items": [
+        {
+            "res_item_index": 0,
+            "quantity": 1,
+            "product": {
+                "slug": "organic-india-classic-tulsi-green-tea-100-g-mffn62-7533784",
+                "images": [
+                    {
+                        "secure_url": "https://cdn1.jiomartjcp.com/v2/catalog-cloud/jiomar/original/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-0-20210812.jpg.a17415a870.jpg",
+                        "aspect_ratio": "16:25",
+                        "url": "https://cdn1.jiomartjcp.com/v2/catalog-cloud/jiomar/original/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-0-20210812.jpg.a17415a870.jpg"
+                    }
+                ],
+                "teaser_tag": {},
+                "brand": {
+                    "uid": 1537,
+                    "name": "Organic India"
+                },
+                "action": {
+                    "query": {
+                        "product_slug": [
+                            "organic-india-classic-tulsi-green-tea-100-g-mffn62-7533784"
+                        ]
+                    },
+                    "url": "https://platform.jiomartjcp.com/platform/content/v1/products/organic-india-classic-tulsi-green-tea-100-g-mffn62-7533784/",
+                    "type": "page",
+                    "page": {
+                        "type": "product",
+                        "params": {
+                            "slug": [
+                                "organic-india-classic-tulsi-green-tea-100-g-mffn62-7533784"
+                            ]
+                        }
+                    }
+                },
+                "uid": 7533784,
+                "tags": [
+                    "GROCERIES",
+                    "rrl_fc",
+                    "kirana_1p",
+                    "NON-RX",
+                    "1p",
+                    "QC"
+                ],
+                "_custom_json": {
+                    "infinite_inventory": "false",
+                    "brand": "Demo Brand"
+                },
+                "type": "product",
+                "name": "Organic India Classic Tulsi Green Tea 100 g",
+                "item_code": "490058564",
+                "categories": [
+                    {
+                        "uid": 12097,
+                        "name": "Gourmet Tea & Tea Bags"
+                    }
+                ],
+                "attributes": {
+                    "item-dimensions-depth-value": "2",
+                    "item-dimensions-length-unit": "cm",
+                    "type": "Catalog",
+                    "key-features": "Tasty & flavourful",
+                    "stock-jio-code": "EGURHKRVAB4USY98",
+                    "available-at-rrl-fc": "true",
+                    "is-sodexo-eligible": "true",
+                    "item-dimensions-volume-value": "null",
+                    "l1-category": "Biscuits, Drinks & Packaged Foods",
+                    "vertical-code": "GROCERIES",
+                    "catalog-source": "INFIBEAM",
+                    "dimensions-productlength": 2.0,
+                    "manufacturer-email": "care@organicindia.com",
+                    "is-rrl-exclusive": "false",
+                    "is-hazmat": "false",
+                    "lookup-inventory": "false",
+                    "group-product-id": "RCZ6EI4TNM",
+                    "dimensions-productwidth": 2.0,
+                    "available-at-1p-kirana": "true",
+                    "eancode": "801541071005",
+                    "manufacturer-website": "https://www.organicindia.com/",
+                    "is-subscribable": "false",
+                    "available-at-3p-seller": "false",
+                    "brand_name": "Organic India",
+                    "assembly-required": "No",
+                    "insta-available": "true",
+                    "is-high-value": "false",
+                    "size": "OS",
+                    "item-dimensions-length-value": "2",
+                    "qty": "100",
+                    "item-dimensions-height-unit": "cm",
+                    "net-quantity-value": 100,
+                    "item-dimensions-depth-unit": "cm",
+                    "item-dimensions-height-value": "2",
+                    "sodexo-payment-eligible": "true",
+                    "food-type": "green_dot",
+                    "is-liquid": "false",
+                    "max-qty-in-order": "4",
+                    "source-id": "490058564",
+                    "manufacturer-contact": "18001805153",
+                    "category-l2": "Tea & Coffee",
+                    "category-l1": "Biscuits, Drinks & Packaged Foods",
+                    "brand-id": "2251",
+                    "item-dimensions-net-weight-value": "2",
+                    "net-quantity-unit": "g",
+                    "manufacturedetails-manufactureid": "2084",
+                    "available-at-3p-kirana": "false",
+                    "dimensions-productheight": 2.0,
+                    "l3-category": "Gourmet Tea & Tea Bags",
+                    "dimensions-productweight": 2.0,
+                    "item-dimensions-width-value": "2",
+                    "variant-seller-product-code": "490058564",
+                    "seller-type": "1p",
+                    "jiomart-available": "true",
+                    "visible-in-whatsapp": "true",
+                    "item-dimensions-width-unit": "cm",
+                    "is-fragile": "false",
+                    "price-compare-factor": "1",
+                    "stage": "pending",
+                    "whatsapp-available": "true",
+                    "l2-category": "Tea & Coffee",
+                    "item-dimensions-net-weight-unit": "gm",
+                    "attributes": "{\"product_code\":\"490058564\",\"seller_product_code\":\"490058564\",\"id\":\"RCZ6EI4TNM\",\"title\":\"Organic India Classic Tulsi Green Tea 100 g\",\"status\":\"active\",\"type\":\"Catalog\",\"owner\":{\"id\":1,\"name\":\"Reliance Retail\",\"seller_number\":\"EGURHK\"},\"family\":{\"id\":null,\"name\":null,\"description\":null},\"vertical_specific_product_info\":{\"name\":\"GROCERIES\",\"code\":\"14db30959545008546fcc5c132528853\",\"attributes\":{\"contributors\":[{\"name\":null,\"role\":null,\"role_type\":null}],\"content_info\":{\"edition\":null,\"languages\":[],\"pages_count\":null,\"publication_date\":null,\"binding\":null,\"rating\":null},\"is_food\":true,\"food_type\":\"green_dot\"}},\"size_chart_code\":null,\"brand\":{\"id\":2251,\"name\":\"Organic India\",\"source_id\":\"T204\",\"source_name\":\"ORGANIC INDIA\",\"source_debug\":\"1P Migration\",\"code\":null,\"status\":\"active\",\"type\":null,\"description\":null,\"external_references\":{\"urls\":{\"image_url\":null,\"url\":null,\"logo_url\":null}}},\"marketed_by\":[],\"manufacturer\":{\"id\":2084,\"code\":\"83cd7161c6b1264264870923334cae51\",\"name\":\"Organic India Pvt. Ltd.\",\"phone\":\"18001805153\",\"email\":\"care@organicindia.com\",\"website\":\"https://www.organicindia.com/\",\"source_id\":null,\"source_name\":null,\"source_debug\":\"Manufacturer update 9 march 2020\",\"external_references\":{\"urls\":{\"image_url\":null,\"url\":null,\"logo_url\":null}},\"manufacturing_addresses\":[{\"id\":3426,\"code\":\"822b55369a258ed067975983776f00b4\",\"name\":\"Organic India Pvt. Ltd.\",\"address\":\"Factory : Plot No. 266, Faizabad Rd, Kamta, Po Chinhat, Lucknow . U.P-226028\"}]},\"importer\":[],\"manufacture_product_info\":{\"part_number\":null,\"packaging_type\":null,\"model\":\"\",\"cold_storage\":null,\"is_adult_product\":null,\"warranty\":{\"window\":null,\"window_time_unit\":null,\"allowed\":false,\"description\":null},\"logistics_info\":{\"package_label\":[],\"article_type\":{\"is_liquid\":false,\"is_fragile\":false,\"is_hazmat\":false},\"hd_flag\":\" \",\"mode_of_transport\":\" \"},\"installation\":{\"assembly_required\":false,\"assembled_by\":null},\"discontinued_by_manufacturer\":null},\"classification\":{\"category\":[{\"id\":\"home\",\"name\":\"Home\",\"level\":0,\"source_id\":null,\"source_name\":\"Home\",\"source_debug\":null,\"primary\":false},{\"id\":\"home_groc\",\"name\":\"Groceries\",\"level\":1,\"source_id\":null,\"source_name\":\"Groceries\",\"source_debug\":null,\"primary\":false},{\"id\":\"home_groc_bisc\",\"name\":\"Biscuits, Drinks & Packaged Foods\",\"level\":2,\"source_id\":null,\"source_name\":\"Biscuits, Drinks & Packaged Foods\",\"source_debug\":null,\"primary\":false},{\"id\":\"home_groc_bisc_teac\",\"name\":\"Tea & Coffee\",\"level\":3,\"source_id\":null,\"source_name\":\"Tea & Coffee\",\"source_debug\":null,\"primary\":false},{\"id\":\"home_groc_beve_tea_gour\",\"name\":\"Gourmet Tea & Tea Bags\",\"level\":4,\"source_id\":null,\"source_name\":\"Gourmet Tea & Tea Bags\",\"source_debug\":null,\"primary\":true}],\"others\":{\"alternate_categories\":[],\"product_group\":{\"id\":null,\"name\":null,\"source_id\":null,\"source_name\":null,\"source_debug\":null},\"product_certifications\":[]}},\"buying_options\":{\"payment\":{\"allowed_payment_options\":[],\"is_sodexo_eligible\":true},\"trade_in\":{\"allowed\":null}},\"returns\":{\"pdr\":{\"allowed\":false},\"dsr\":{\"allowed\":true}},\"product_availablity\":{\"start_date\":null,\"end_date\":null,\"launch_date\":null},\"key_features\":[\"Tasty & flavourful\"],\"video_url\":\"\",\"compliance\":{\"safety\":{}},\"whats_in_the_box\":{\"contents\":[],\"components_count\":0},\"is_rrl_exclusive\":false,\"measure\":null,\"snippet\":\"Start your mornings with Organic India Classic Tulsi Green Tea. Even during work hours or at night, a cup of this tea is just the kick your brain needs. Indulge in the truly rich flavours of this tea in every sip you have. So go ahead, and buy this pr\",\"additional_info\":null,\"disclaimers\":\"Despite our attempts to provide you with the most accurate information possible, the actual packaging, ingredients and colour of the product may sometimes vary. Please read the label, directions and warnings carefully before use.\",\"discovery\":{\"product_keywords\":[],\"seo\":{\"keywords\":[]}},\"tags\":null,\"catalog_version\":35,\"approval_date\":\"2026-02-19 07:42:01 +0530\",\"tax\":{\"cgst\":2.5,\"igst\":5,\"sgst\":2.5,\"hsn\":\"09021090\",\"conditional_hsn\":\"09021090\",\"reporting_hsn\":\"09021090\"},\"catalog_options\":[{\"code\":\"packsize\",\"display_name\":\"Packsize\",\"primary\":true,\"values\":[]},{\"code\":\"size\",\"display_name\":\"Size\",\"primary\":false,\"values\":[]}],\"uom_for_price_compare\":null,\"variants\":{\"product_code\":\"490058564\",\"seller_product_code\":\"490058564\",\"id\":\"RVAB4USY98\",\"title\":\"Organic India Classic Tulsi Green Tea 100 g\",\"status\":\"active\",\"external_ids\":{\"EANs\":{\"values\":[\"801541071005\"],\"primary\":\"801541071005\"},\"ISBNs\":{\"values\":null},\"UPCs\":{\"values\":null}},\"sap\":{\"base_uom\":null},\"availability_flags\":{\"kirana_1p\":true,\"kirana_3p\":false,\"rrl_fc\":true,\"rrl_store\":true,\"seller_3p\":false},\"infinite_inventory\":false,\"infinite_inventory_insta\":false,\"catalog_options\":[],\"image_groups\":{\"Product Images\":{\"order\":1,\"name\":\"Product Images\",\"images\":[{\"original\":\"https://images.seller.jiomart.com/img/c/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-0-20210812.jpg.a17415a870.jpg.WNzP.999xx.jpg\",\"default\":false},{\"original\":\"https://images.seller.jiomart.com/img/c/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-1-20210812.jpg.0c261a4762.jpg.Z2GM.999xx.jpg\",\"default\":false},{\"original\":\"https://images.seller.jiomart.com/img/c/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-2-20210812.jpg.4b97385106.jpg.WJLl.999xx.jpg\",\"default\":false},{\"original\":\"https://images.seller.jiomart.com/img/c/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-3-20210812.jpg.43ca8e3f9c.jpg.9IHf.999xx.jpg\",\"default\":false},{\"original\":\"https://images.seller.jiomart.com/img/c/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-4-20210812.jpg.5ffb64aa2b.jpg.Hl9k.999xx.jpg\",\"default\":false},{\"original\":\"https://images.seller.jiomart.com/img/c/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-5-20210812.jpg.7945ae1b7a.jpg.X7TT.999xx.jpg\",\"default\":false}]},\"Legal Images\":{\"order\":2,\"name\":\"Legal Images\",\"images\":[{\"original\":\"https://images.seller.jiomart.com/img/c/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-13-20210812.jpg.48113b4ead.jpg.CDFO.999xx.jpg\",\"default\":false},{\"original\":\"https://images.seller.jiomart.com/img/c/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-14-20210812.jpg.e076206da2.jpg.AKmg.999xx.jpg\",\"default\":false},{\"original\":\"https://images.seller.jiomart.com/img/c/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-15-20210812.jpg.70223325b0.jpg.IOyq.999xx.jpg\",\"default\":false},{\"original\":\"https://images.seller.jiomart.com/img/c/images/othe/egurhk/.j/pg/organic-india-tulsi-green-tea-100-g-16-20210812.jpg.22bbd409fd.jpg.kNA1.999xx.jpg\",\"default\":false}]}},\"origin_countries\":[\"India\"],\"buying_options\":{\"maximum_order_quantity_restrictions\":[],\"payment\":{\"gift_card_applicable\":true}},\"alternate_names\":null,\"product_rank\":0,\"subscribable\":false,\"count_per_product\":null,\"net_quantity\":{\"value\":100,\"unit\":\"g\"},\"shelf_life\":{\"window\":null,\"window_unit\":null},\"dimensions\":{\"item_dimensions\":{\"height\":{\"value\":null,\"unit\":null},\"length\":{\"value\":null,\"unit\":null},\"width\":{\"value\":null,\"unit\":null},\"net_weight\":{\"value\":null,\"unit\":null},\"volume\":{\"value\":null,\"unit\":null},\"depth\":{\"value\":null,\"unit\":null}}},\"factor_for_price_compare\":1,\"fulfillment\":{\"is_hvi\":false,\"device_serial_number\":{\"mandatory\":false}},\"fulfillment_channel\":\"1P\",\"item_code\":null,\"stock\":[{\"id\":555206,\"cluster_id\":[\"PANINDIAGROCERIES\"],\"jio_code\":\"EGURHKRVAB4USY98\",\"status\":\"active\",\"created_at\":\"2022-01-18 07:32:31 +0530\",\"updated_at\":\"2026-07-28 15:50:24 +0530\",\"channel_id\":null,\"is_sodexo_eligible\":true,\"merchant_info\":{\"id\":1,\"name\":\"Reliance Retail\",\"seller_number\":\"EGURHK\",\"address\":null,\"release_date\":null,\"company_id\":1},\"sale_point\":\"RRL_STORE\",\"availability\":{\"minimum_order_quantity\":1,\"maximum_order_quantity\":4,\"type\":\"Buy Now\"},\"inventory\":[{\"fulfiller\":{\"id\":2147,\"name\":\"Reliance Retail Limited (400710)\",\"number\":\"3PEGURHKFC01\"},\"infinite_inventory\":false,\"origin_countries\":[\"India\"]}],\"pricing_type\":\"M Type\",\"condition\":{\"value\":\"New\",\"subcondition\":null,\"message\":null},\"gifting\":{\"can_be_gift_wrapped\":null,\"can_be_gift_messaged\":null}}]},\"specifications\":[{\"code\":\"item_specification\",\"display_string\":\"Item Specification\",\"sub_specs\":[{\"code\":\"C9233E\",\"display_string\":\"Product Type\",\"value\":\"Green Tea\",\"original_value\":[\"Green Tea\"]},{\"code\":\"C9999E\",\"display_string\":\"Storage Category\",\"value\":\"Normal storage\",\"original_value\":[\"Normal storage\"]},{\"code\":\"C2160E\",\"display_string\":\"Tea Form\",\"value\":\"Leaves & Granules\",\"original_value\":[\"Leaves & Granules\"]},{\"code\":\"C1305T\",\"display_string\":\"Ingredients\",\"value\":\"Available on Image\",\"original_value\":\"Available on Image\"},{\"code\":\"C2308T\",\"display_string\":\"Additives\",\"value\":\"Available on Image\",\"original_value\":\"Available on Image\"},{\"code\":\"C3702T\",\"display_string\":\"Nutrient Content\",\"value\":\"Available on Image\",\"original_value\":\"Available on Image\"},{\"code\":\"C9872T\",\"display_string\":\"FSSAI Number\",\"value\":\"Available on Image\",\"original_value\":\"Available on Image\"},{\"code\":\"C8842E\",\"display_string\":\"Flavor\",\"value\":\"Tulsi\",\"original_value\":[\"Tulsi\"]},{\"code\":\"C6768E\",\"display_string\":\"Dietary Preference\",\"value\":\"Available on the Image\",\"original_value\":[\"Available on the Image\"]},{\"code\":\"C5291E\",\"display_string\":\"Allergens Included\",\"value\":\"Available on the Image\",\"original_value\":[\"Available on the Image\"]},{\"code\":\"C7585T\",\"display_string\":\"Net Quantity\",\"value\":\"100 g\",\"original_value\":\"100 g\"}]}],\"article_code\":\"490058564\",\"article_source\":\"SAP\",\"source_id\":\"490058564\",\"source_debug\":\"INFIBEAM\",\"channel_id\":[\"JIOMART\"]}",
+                    "manufacturer-id": "2084"
+                },
+                "l1_categories": [
+                    113.0
+                ],
+                "l2_categories": [
+                    633.0
+                ],
+                "l3_categories": [
+                    12097.0
+                ],
+                "departments": [
+                    1.0
+                ]
+            },
+            "parent_item_identifiers": {
+                "identifier": null,
+                "parent_item_id": null,
+                "parent_item_size": null
+            },
+            "is_set": false,
+            "article": {
+                "seller_identifier": "490058564",
+                "quantity": 2,
+                "seller": {
+                    "uid": 1,
+                    "name": "Reliance Retail Limited"
+                },
+                "cart_item_meta": {
+                    "primary_item": true,
+                    "group_id": ""
+                },
+                "is_gift_visible": false,
+                "uid": "690b064858d34e35c2ae2ead",
+                "gift_card": {
+                    "gift_price": 0.0,
+                    "display_text": "",
+                    "is_gift_applied": false
+                },
+                "product_group_tags": [],
+                "identifier": {
+                    "ean": "801541071005",
+                    "sku_code": "490058564"
+                },
+                "mto_quantity": 0,
+                "extra_meta": {
+                    "is_tradein_opted": false
+                },
+                "type": "article",
+                "_custom_json": {},
+                "price": {
+                    "base": {
+                        "effective": 280.0,
+                        "currency_code": "INR",
+                        "currency_symbol": "₹",
+                        "marked": 320.0,
+                        "selling": 280.0
+                    },
+                    "converted": {
+                        "effective": 280.0,
+                        "currency_code": "INR",
+                        "currency_symbol": "₹",
+                        "marked": 320.0,
+                        "selling": 280.0
+                    }
+                },
+                "meta": {
+                    "compute_delivery_fee": true,
+                    "vertical_code": "GROCERIES"
+                },
+                "size": "OS",
+                "store": {
+                    "uid": 857,
+                    "name": "Groceries-U1QE",
+                    "store_code": "U1QE"
+                },
+                "tags": [
+                    "1P"
+                ],
+                "variants": {}
+            },
+            "promotions_applied": [],
+            "delivery_promise": {
+                "formatted": {
+                    "max": "Thu, 30 Jul",
+                    "min": "Thu, 30 Jul"
+                },
+                "timestamp": {
+                    "max": 1785385800.0,
+                    "min": 1785385800.0
+                },
+                "iso": {
+                    "max": "2026-07-30T04:30:00Z",
+                    "min": "2026-07-30T04:30:00Z"
+                }
+            },
+            "key": "7533784_OS",
+            "coupon": {},
+            "bulk_offer": {},
+            "price_adjustment_applied": [],
+            "price": {
+                "base": {
+                    "marked": 320.0,
+                    "add_on": 280.0,
+                    "currency_code": "INR",
+                    "currency_symbol": "₹",
+                    "effective": 280.0,
+                    "selling": 280.0
+                },
+                "converted": {
+                    "marked": 320.0,
+                    "add_on": 280.0,
+                    "currency_code": "INR",
+                    "currency_symbol": "₹",
+                    "effective": 280.0,
+                    "selling": 280.0
+                }
+            },
+            "coupon_message": "",
+            "identifiers": {
+                "identifier": "Ld6SPT4bQ9uzYyvvYzaiw"
+            },
+            "message": "",
+            "discount": "12% OFF",
+            "availability": {
+                "out_of_stock": false,
+                "deliverable": true,
+                "available_sizes": [
+                    {
+                        "display": "OS",
+                        "value": "OS",
+                        "is_available": true
+                    }
+                ],
+                "is_valid": true,
+                "other_store_quantity": 2,
+                "sellable_quantity": 2,
+                "sizes": [
+                    "OS"
+                ]
+            },
+            "moq": {
+                "increment_unit": null,
+                "maximum": null,
+                "minimum": 1.0
+            },
+            "price_per_unit": {
+                "base": {
+                    "marked": 320.0,
+                    "currency_code": "INR",
+                    "currency_symbol": "₹",
+                    "effective": 280.0,
+                    "selling_price": 280.0
+                },
+                "converted": {
+                    "marked": 320.0,
+                    "currency_code": "INR",
+                    "currency_symbol": "₹",
+                    "effective": 280.0,
+                    "selling_price": 280.0
+                }
+            },
+            "promo_meta": {},
+            "custom_order": {
+                "is_custom_order": false,
+                "manufacturing_time": 0.0,
+                "manufacturing_time_unit": "days"
+            },
+            "charges": [],
+            "allow_remove": true,
+            "auto_add_to_cart": false,
+            "discount_meta": {},
+            "journey_wise_promise": [
+                {
+                    "journey": "quickcommerce",
+                    "meta": {
+                        "mbv_config": [
+                            {
+                                "department": "Groceries",
+                                "min_basket_value": 99
+                            }
+                        ],
+                        "polygon_id": "U1QE_QC_11b47dae",
+                        "eta_mins": 36,
+                        "distance": 2488.5094,
+                        "zone": "east"
+                    },
+                    "delivery_promise": {
+                        "min": "2026-07-30T04:30:00Z",
+                        "max": "2026-07-30T04:30:00Z",
+                        "message": "Delivery Before 10:00 AM"
+                    }
+                }
+            ],
+            "distance": 2488.5094
+        }
+    ],
+    "delivery_address": "Dddd, ODISHA, India",
+    "pincode": "754004",
+    "auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJycmlkIjoiYjY1MjFlMGMtY2UzNS00Mzk3LWFmNmMtM2RmYmYwNjJjYTYxIiwiZGV2aWNlX2luZm8iOnsiZGV2aWNlX2ZpbmdlcnByaW50IjoiNmMxNTU2N2MtNWFhZC00Yi1leUp3YkdGMFptOXliU0k2Iiwib3NfbmFtZSI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsInRpbWVzdGFtcCI6IjIwMjYtMDctMTVUMTU6NTg6MjMuMjI5WiIsInNvdXJjZV9pZCI6IjE1ZjMwNWNmLWQxYzItNGE3Yi1hNmQ2LWIzMGQ4NzAyMDVjNSJ9LCJpYXQiOjE3ODQxMzExMDQsImV4cCI6MTc5OTY4MzEwNCwic2FsdCI6MH0.CnjHydZZiKtGaBs_VsYL_hMkApwL9ufOHxB3Oc1ugHA",
+    "session_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNmE1N2FlMzA1ZmNkOThlZmZhNWYzYzM2IiwiZW1haWxzIjpbeyJlbWFpbCI6Ijc2ODI5NDA3MTVAbm9tYWlsLmppb21hcnQuY29tIiwiYWN0aXZlIjp0cnVlLCJwcmltYXJ5Ijp0cnVlLCJ2ZXJpZmllZCI6dHJ1ZX1dLCJwaG9uZV9udW1iZXJzIjpbeyJwaG9uZSI6Ijc2ODI5NDA3MTUiLCJjb3VudHJ5Q29kZSI6OTEsImFjdGl2ZSI6dHJ1ZSwicHJpbWFyeSI6dHJ1ZSwidmVyaWZpZWQiOnRydWUsInJyaWRfbGlua2VkIjp0cnVlLCJjb3VudHJ5X2NvZGUiOjkxfV0sImZpcnN0X25hbWUiOiJEcmVyZSIsImxhc3RfbmFtZSI6IiIsImhhc2hlZF9ycl9pZCI6IjQ5NTk2RDRDQTU3OEY5NzU2MjZCODUyNzlFQkUzMDk3QzlGN0EzOEYxMzRCMDBFMDYzOTEwMDc4MDJGNzc3NkIiLCJycl9pZCI6ImI2NTIxZTBjLWNlMzUtNDM5Ny1hZjZjLTNkZmJmMDYyY2E2MSIsImNyZWF0ZWRfYXQiOiIyMDI2LTA3LTE1VDE1OjU4OjQwLjQ1NVoiLCJpYXQiOjE3ODUzNjI4NzMsImV4cCI6MTc4NTQ0OTI3M30.6jXl3dIKJIKaYXOm1dz1fVvBktEslITQuckqlNEZk4I",
+    "last_updated": "2026-07-30 03:38:04"
+}
